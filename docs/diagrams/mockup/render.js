@@ -1,7 +1,7 @@
 // Ghép scene.json, stats.json vào template, chụp các màn hình mockup ra PNG (2x).
 const fs = require('fs');
 const path = require('path');
-const puppeteer = require('C:/Users/oneit8x/AppData/Roaming/npm/node_modules/puppeteer');
+const puppeteer = require(process.env.PUPPETEER || 'puppeteer');
 
 const dir = __dirname;
 const outDir = process.argv[2];

@@ -11,7 +11,7 @@ const out = path.join(dir, 'anh');
 fs.mkdirSync(out, { recursive: true });
 const URL = process.argv[2] || 'https://ie402-webgis-25410333.azurewebsites.net';
 const API = URL + '/api';
-const puppeteer = createRequire(import.meta.url)(process.env.PUPPETEER || 'C:/Users/oneit8x/AppData/Roaming/npm/node_modules/puppeteer');
+const puppeteer = createRequire(import.meta.url)(process.env.PUPPETEER || 'puppeteer');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const browser = await puppeteer.launch({ headless: 'new', protocolTimeout: 600000, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });

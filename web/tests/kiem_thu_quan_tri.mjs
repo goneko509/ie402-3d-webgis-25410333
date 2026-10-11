@@ -11,7 +11,7 @@ const out = path.join(dir, 'anh');
 fs.mkdirSync(out, { recursive: true });
 const URL = process.argv[2] || 'http://localhost:5173';
 const API = URL + '/api';
-const puppeteer = createRequire(import.meta.url)(process.env.PUPPETEER || 'C:/Users/oneit8x/AppData/Roaming/npm/node_modules/puppeteer');
+const puppeteer = createRequire(import.meta.url)(process.env.PUPPETEER || 'puppeteer');
 const kq = [];
 const check = (ma, ten, ok, tt = '') => kq.push([ma, ten, ok ? 'Đạt' : 'KHÔNG ĐẠT', tt]);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

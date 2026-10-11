@@ -327,15 +327,15 @@ Tiếp tục thực thi các script sau trong `db/`:
    DB_PORT=1433
    DB_NAME=ie402_green_space
    DB_USER=sa
-   DB_PASSWORD=123
+   DB_PASSWORD=<mat_khau_sql_server>
    DB_TRUST_CERT=true
    DB_POOL_MAX=10
-   JWT_SECRET=EkE/US5khde28j6LhIhmScWIt1SNADI0eW0beVtN3tKX9xFbGAlLbB0u/38eL5xg
+   JWT_SECRET=<chuoi_jwt_secret_ngau_nhien>
    JWT_EXPIRES=8h
    CORS_ORIGIN=http://localhost:5173
    ```
 
-   > **Lưu ý:** Điều chỉnh lại `DB_USER` và `DB_PASSWORD` cho đúng với mật khẩu tài khoản quản trị SQL Server trên máy bạn nếu khác với cấu hình mặc định.
+   > **Lưu ý:** Cấu hình file `.env` mẫu từ file `.env.example`. Thay đổi `DB_USER` và `DB_PASSWORD` cho đúng với thông tin xác thực SQL Server trên máy bạn. Tuyệt đối không đưa mật khẩu cá nhân lên hệ thống quản lý phiên bản.
    >
 
 ### 8.2. Cài đặt và cấu hình dịch vụ Frontend Web (`web/`)
@@ -411,12 +411,12 @@ Hệ thống cung cấp sẵn các tài khoản thử nghiệm tương ứng v�
 
 - **Người quản lý khu vực (Zone Manager):**
   - **Tên đăng nhập:** `ttb`
-  - **Mật khẩu:** `123456`
+  - **Mật khẩu:** `Demo@2026`
   - **Phân công phụ trách:** Phân khu 2 (Khu Ký túc xá Khu B - ĐHQG-HCM).
   - **Hành vi kiểm chứng:** Cán bộ có thể thêm, nhân bản, sửa (dời vị trí), xóa cây trong Khu 2 thành công. Nếu thao tác cây ở phân khu khác (ví dụ Khu 1), trigger CSDL sẽ phát sinh lỗi 50104 và API trả về `403 Forbidden`: *"Bạn chỉ được thao tác cây trong khu được phân công"*.
 - **Quản trị hệ thống (System Administrator):**
   - **Tên đăng nhập:** `admin`
-  - **Mật khẩu:** `123456`
+  - **Mật khẩu:** `Demo@2026`
   - **Quyền hạn kỹ thuật:** Không bị giới hạn phân khu (`ma_nql` để trống); có thể thao tác dữ liệu cây ở toàn bộ 5 khu vực; mở khóa tính năng Khôi phục dữ liệu mặc định (UC10) và tính năng Xem nhật ký & Hoàn tác thay đổi (UC11).
 
 ---

@@ -13,7 +13,7 @@ const out = process.argv[3] || path.join(dir, '../../../Latex_Final/imgs/mockup'
 fs.mkdirSync(out, { recursive: true });
 const API = URL + '/api';
 const MK = 'Demo@2026';
-const puppeteer = createRequire(import.meta.url)(process.env.PUPPETEER || 'C:/Users/oneit8x/AppData/Roaming/npm/node_modules/puppeteer');
+const puppeteer = createRequire(import.meta.url)(process.env.PUPPETEER || 'puppeteer');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const browser = await puppeteer.launch({ headless: 'new', protocolTimeout: 600000, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });

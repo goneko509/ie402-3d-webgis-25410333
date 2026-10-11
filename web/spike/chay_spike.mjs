@@ -11,7 +11,7 @@ const version = process.argv[2];
 if (!version) throw new Error('Cần tham số phiên bản SDK, ví dụ: node chay_spike.mjs 4.33');
 const API = process.env.API || 'http://localhost:3001/api';
 const require = createRequire(import.meta.url);
-const puppeteer = require(process.env.PUPPETEER || 'C:/Users/oneit8x/AppData/Roaming/npm/node_modules/puppeteer');
+const puppeteer = require(process.env.PUPPETEER || 'puppeteer');
 
 const cay14 = await (await fetch(`${API}/cay/14`)).json();
 const [cx, cy] = cay14.geometry.coordinates;
