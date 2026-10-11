@@ -1,0 +1,1 @@
+import{t as e}from"./defaultCIMValues-DEXUkO0G.js";var t=15.5,n=1024;e.CIMSolidStroke.capstyle,e.CIMSolidStroke.joinstyle,e.CIMSolidStroke.miterlimit;export{n,t};

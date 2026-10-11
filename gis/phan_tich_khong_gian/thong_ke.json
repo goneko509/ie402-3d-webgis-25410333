@@ -1,0 +1,78 @@
+{
+ "theo_khu": [
+  {
+   "ma": 1,
+   "ten": "Khu phía Tây",
+   "dien_tich_ha": 303.5293867924047,
+   "so_cay": 96,
+   "mat_do": 0.3162790957886989,
+   "dien_tich_tan_m2": 8253.834061402566,
+   "ty_le_che_phu": 0.2719286639302466,
+   "the_tich_m3": 63726.52054007414
+  },
+  {
+   "ma": 2,
+   "ten": "Khu Trung tâm Marie Curie - Isaac Newton",
+   "dien_tich_ha": 42.2408882870022,
+   "so_cay": 45,
+   "mat_do": 1.0653185059521297,
+   "dien_tich_tan_m2": 4164.934172148452,
+   "ty_le_che_phu": 0.9859958777027019,
+   "the_tich_m3": 37421.22854808954
+  },
+  {
+   "ma": 3,
+   "ten": "Khu Quảng trường Sáng tạo",
+   "dien_tich_ha": 15.428675077037456,
+   "so_cay": 36,
+   "mat_do": 2.333317658207665,
+   "dien_tich_tan_m2": 3450.59451373075,
+   "ty_le_che_phu": 2.236481419500681,
+   "the_tich_m3": 27428.27627715885
+  },
+  {
+   "ma": 4,
+   "ten": "Khu Đông Bắc",
+   "dien_tich_ha": 148.9743594901344,
+   "so_cay": 29,
+   "mat_do": 0.19466437109884324,
+   "dien_tich_tan_m2": 2437.4118320033012,
+   "ty_le_che_phu": 0.1636128418571731,
+   "the_tich_m3": 19939.889634264244
+  },
+  {
+   "ma": 5,
+   "ten": "Khu Đông Nam",
+   "dien_tich_ha": 106.09709035321875,
+   "so_cay": 127,
+   "mat_do": 1.1970168039216837,
+   "dien_tich_tan_m2": 11560.730446505806,
+   "ty_le_che_phu": 1.0896368984312188,
+   "the_tich_m3": 98234.32088422615
+  }
+ ],
+ "toan_vung": {
+  "ten": "Toàn vùng nghiên cứu",
+  "dien_tich_ha": 616.2703999999188,
+  "so_cay": 333,
+  "mat_do": 0.5403472242055498,
+  "dien_tich_tan_m2": 29867.505025792037,
+  "ty_le_che_phu": 0.4846493523913525,
+  "the_tich_m3": 246750.23588381291
+ },
+ "kiem_dinh": {
+  "so_canh_da_giac": 64,
+  "ty_le_ly_thuyet": 0.9983943930356184,
+  "tong_pi_R2_m2": 30288.189021038805,
+  "tong_buffer_m2": 30239.55809386485,
+  "sai_lech_xap_xi_pct": -0.16056069625085712,
+  "khu_mau": "Khu Quảng trường Sáng tạo",
+  "so_cay_khu_mau": 36,
+  "so_cay_tan_nam_tron_trong_khu": 34,
+  "so_cap_tan_chong_lan": 8,
+  "tinh_tay_tong_pi_R2_m2": 3514.4682856443656,
+  "gis_tan_da_dissolve_m2": 3450.5945137290546,
+  "chenh_lech_pct": -1.81745193650538
+ },
+ "k": 0.75
+}

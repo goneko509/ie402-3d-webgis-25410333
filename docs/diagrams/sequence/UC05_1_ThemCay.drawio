@@ -1,0 +1,206 @@
+<mxfile host="Electron">
+  <diagram id="UC05_1_ThemCay" name="UC05_1_ThemCay">
+    <mxGraphModel dx="726" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="600" pageHeight="968" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UC05_1_ThemCay-37" parent="1" style="html=1;shape=umlLifeline;participant=umlActor;fillColor=none;strokeColor=#000000;fontColor=#000000;fontFamily=Times New Roman;fontSize=15;fontStyle=1;size=46;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;align=center;whiteSpace=nowrap;" value="Người QL khu" vertex="1">
+          <mxGeometry height="931.2" width="100" x="2" y="21.2" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-38" parent="1" style="shape=umlLifeline;fillColor=#dae8fc;strokeColor=#333333;fontColor=#000000;fontFamily=Times New Roman;fontSize=15;fontStyle=1;whiteSpace=nowrap;html=1;size=34;" value="Giao diện" vertex="1">
+          <mxGeometry height="931.2" width="85.4" x="200.6" y="21.2" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-39" parent="1" style="shape=umlLifeline;fillColor=#dae8fc;strokeColor=#333333;fontColor=#000000;fontFamily=Times New Roman;fontSize=15;fontStyle=1;whiteSpace=nowrap;html=1;size=34;" value="BackEnd" vertex="1">
+          <mxGeometry height="931.2" width="82.3" x="317.3" y="21.2" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-40" parent="1" style="shape=umlLifeline;fillColor=#dae8fc;strokeColor=#333333;fontColor=#000000;fontFamily=Times New Roman;fontSize=15;fontStyle=1;whiteSpace=nowrap;html=1;size=34;" value="CSDL" vertex="1">
+          <mxGeometry height="931.2" width="70" x="527" y="21.2" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-41" parent="1" style="html=1;fillColor=#dae8fc;strokeColor=#333333;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="824.8" width="10" x="47" y="109.8" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-42" parent="1" style="html=1;fillColor=#dae8fc;strokeColor=#333333;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="824.8" width="10" x="238.3" y="109.8" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-43" parent="1" style="html=1;fillColor=#dae8fc;strokeColor=#333333;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="487.2" width="10" x="353.5" y="402.8" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-44" parent="1" style="html=1;fillColor=#dae8fc;strokeColor=#333333;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="353.8" width="10" x="557" y="491.8" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="1. Chọn khu phụ trách,&lt;br&gt;bấm &quot;Thêm cây&quot;" vertex="1">
+          <mxGeometry height="34.5" width="173.3" x="61" y="79.2" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-2" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=block;endSize=7;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="57" y="115.8" as="sourcePoint" />
+            <mxPoint x="238.3" y="115.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-3" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=block;endSize=6;rounded=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="273.3" y="127.8" />
+              <mxPoint x="273.3" y="145.8" />
+            </Array>
+            <mxPoint x="248.3" y="127.8" as="sourcePoint" />
+            <mxPoint x="248.3" y="145.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;fillColor=#ffffff;align=left;verticalAlign=top;" value="2. Mở biểu mẫu ở sidebar, làm mờ ngoài khu;&lt;br&gt;căn khu nếu đang nhìn xa&lt;br&gt;(đang phóng to: giữ camera)" vertex="1">
+          <mxGeometry height="51.8" width="312.7" x="279.3" y="122.8" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=15;fontStyle=2;whiteSpace=wrap;spacing=0;" value="[chọn vị trí,&lt;br&gt;nhấp lại để đổi]" vertex="1">
+          <mxGeometry height="34.5" width="165.3" x="64" y="209.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="3. Nhấp vị trí trên bản đồ" vertex="1">
+          <mxGeometry height="17.2" width="173.3" x="61" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-7" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=block;endSize=7;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="57" y="265.2" as="sourcePoint" />
+            <mxPoint x="238.3" y="265.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-8" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=block;endSize=6;rounded=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="273.3" y="277.2" />
+              <mxPoint x="273.3" y="295.2" />
+            </Array>
+            <mxPoint x="248.3" y="277.2" as="sourcePoint" />
+            <mxPoint x="248.3" y="295.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-9" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;fillColor=#ffffff;align=left;verticalAlign=top;" value="4. Kiểm tra trong khu, ngoài nền tòa nhà;&lt;br&gt;đặt ghim" vertex="1">
+          <mxGeometry height="34.5" width="312.7" x="279.3" y="272.2" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-10" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=44;height=22;fontStyle=1;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;swimlaneFillColor=none;strokeColor=#333333;" value="loop" vertex="1">
+          <mxGeometry height="134.2" width="588" x="6" y="185.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-11" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="5. Nhập loài, H, R, DBH,&lt;br&gt;ngày trồng, tình trạng;&lt;br&gt;bấm Lưu" vertex="1">
+          <mxGeometry height="51.8" width="173.3" x="61" y="327.8" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-12" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=block;endSize=7;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="57" y="381.5" as="sourcePoint" />
+            <mxPoint x="238.3" y="381.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-13" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="6. POST /cay" vertex="1">
+          <mxGeometry height="17.2" width="97.2" x="252.3" y="389.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-14" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=block;endSize=7;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="248.3" y="408.8" as="sourcePoint" />
+            <mxPoint x="353.5" y="408.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-15" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=block;endSize=6;rounded=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="388.5" y="420.8" />
+              <mxPoint x="388.5" y="438.8" />
+            </Array>
+            <mxPoint x="363.5" y="420.8" as="sourcePoint" />
+            <mxPoint x="363.5" y="438.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-16" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;fillColor=#ffffff;align=left;verticalAlign=top;" value="7. Kiểm tra sơ bộ thuộc tính;&lt;br&gt;gắn SESSION_CONTEXT&lt;br&gt;mã tài khoản" vertex="1">
+          <mxGeometry height="51.8" width="197.5" x="394.5" y="415.8" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="8. INSERT cay_xanh" vertex="1">
+          <mxGeometry height="17.2" width="185.5" x="367.5" y="478.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-18" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=block;endSize=7;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="363.5" y="497.8" as="sourcePoint" />
+            <mxPoint x="557" y="497.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-19" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=block;endSize=6;rounded=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="532" y="509.8" />
+              <mxPoint x="532" y="527.8" />
+            </Array>
+            <mxPoint x="557" y="509.8" as="sourcePoint" />
+            <mxPoint x="557" y="527.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-20" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;fillColor=#ffffff;align=right;verticalAlign=top;" value="9. Ràng buộc R1–R13; trigger: gán khu,&lt;br&gt;phân quyền,&lt;br&gt;ngoài tòa nhà,&lt;br&gt;ghi nhật ký" vertex="1">
+          <mxGeometry height="86.2" width="157.5" x="370.5" y="504.8" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-21" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=15;fontStyle=2;whiteSpace=wrap;spacing=0;" value="[hợp lệ, thuộc&lt;br&gt;khu phụ trách]" vertex="1">
+          <mxGeometry height="34.5" width="165.3" x="64" y="626" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-22" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="10. Ghi thành công&lt;br&gt;(mã cây mới)" vertex="1">
+          <mxGeometry height="34.5" width="185.5" x="367.5" y="662.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-23" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=open;endSize=7;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="557" y="699" as="sourcePoint" />
+            <mxPoint x="363.5" y="699" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-24" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="11. 201&lt;br&gt;+ cây mới" vertex="1">
+          <mxGeometry height="34.5" width="97.2" x="252.3" y="707" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-25" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=open;endSize=7;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="353.5" y="743.5" as="sourcePoint" />
+            <mxPoint x="248.3" y="743.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-26" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="12. Tải lại cảnh, thông báo" vertex="1">
+          <mxGeometry height="17.2" width="173.3" x="61" y="751.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-27" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=open;endSize=7;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="238.3" y="770.8" as="sourcePoint" />
+            <mxPoint x="57" y="770.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-28" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#333333;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="6" y="780.8" as="sourcePoint" />
+            <mxPoint x="594" y="780.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-29" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=15;fontStyle=2;whiteSpace=wrap;spacing=0;" value="[sai thuộc tính /&lt;br&gt;ngoài khu / trong tòa nhà]" vertex="1">
+          <mxGeometry height="34.5" width="165.3" x="64" y="783.8" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-30" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="10&#39;. Báo lỗi, hoàn tác" vertex="1">
+          <mxGeometry height="17.2" width="185.5" x="367.5" y="820.2" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-31" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=open;endSize=7;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="557" y="839.5" as="sourcePoint" />
+            <mxPoint x="363.5" y="839.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-32" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="11&#39;. 400 /&lt;br&gt;403 / 422" vertex="1">
+          <mxGeometry height="34.5" width="97.2" x="252.3" y="847.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-33" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=open;endSize=7;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="353.5" y="884" as="sourcePoint" />
+            <mxPoint x="248.3" y="884" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-34" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=15;verticalAlign=bottom;spacing=0;align=center;" value="12&#39;. Hiện lỗi&lt;br&gt;trong biểu mẫu" vertex="1">
+          <mxGeometry height="34.5" width="173.3" x="61" y="892" as="geometry" />
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-35" edge="1" parent="1" style="html=1;edgeStyle=none;endArrow=open;endSize=7;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="238.3" y="928.5" as="sourcePoint" />
+            <mxPoint x="57" y="928.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UC05_1_ThemCay-36" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=44;height=22;fontStyle=1;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;swimlaneFillColor=none;strokeColor=#333333;" value="alt" vertex="1">
+          <mxGeometry height="336.5" width="588" x="6" y="602" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

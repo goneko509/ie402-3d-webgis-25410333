@@ -1,0 +1,1 @@
+var e=`OBJECTID`;export{e as t};

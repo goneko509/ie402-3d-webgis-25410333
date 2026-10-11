@@ -1,0 +1,1 @@
+import{t as e}from"./Uniform-FnPH-ujw.js";var t=class extends e{constructor(e,t,n,r){super(e,`float`,1,(t,i,a)=>t.setUniform1fv(e,n(i,a),r),t)}};export{t};

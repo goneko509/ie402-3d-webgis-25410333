@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="25_cay_can_so_hoa" id="25_cay_can_so_hoa">
+	<SimpleField name="Name" type="string"></SimpleField>
+	<SimpleField name="ma_loai" type="int"></SimpleField>
+	<SimpleField name="ma_khu_vuc" type="int"></SimpleField>
+</Schema>
+<Folder><name>25_cay_can_so_hoa</name>
+  <Placemark id="25_cay_can_so_hoa.1">
+	<name>357</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">2</SimpleData>
+		<SimpleData name="ma_khu_vuc">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.78416755884,10.8795220305902</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.2">
+	<name>358</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">1</SimpleData>
+		<SimpleData name="ma_khu_vuc">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.799779182777,10.8826545616471</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.3">
+	<name>359</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">4</SimpleData>
+		<SimpleData name="ma_khu_vuc">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.782680616177,10.877040146355</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.4">
+	<name>360</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">1</SimpleData>
+		<SimpleData name="ma_khu_vuc">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.7850781082,10.8732047239489</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.5">
+	<name>361</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">3</SimpleData>
+		<SimpleData name="ma_khu_vuc">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.788533218749,10.8749577905379</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.6">
+	<name>362</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">2</SimpleData>
+		<SimpleData name="ma_khu_vuc">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.799274291685,10.874994826758</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.7">
+	<name>363</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">3</SimpleData>
+		<SimpleData name="ma_khu_vuc">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.797905258827,10.8761903180349</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.8">
+	<name>364</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">2</SimpleData>
+		<SimpleData name="ma_khu_vuc">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.798763551114,10.8769049173437</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.9">
+	<name>365</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">4</SimpleData>
+		<SimpleData name="ma_khu_vuc">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.801006453927,10.8779472698812</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.10">
+	<name>366</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">4</SimpleData>
+		<SimpleData name="ma_khu_vuc">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.799209656549,10.8786726671036</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.11">
+	<name>367</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">1</SimpleData>
+		<SimpleData name="ma_khu_vuc">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.801344840171,10.8763463467511</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.12">
+	<name>368</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">4</SimpleData>
+		<SimpleData name="ma_khu_vuc">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.802912792558,10.8763551982661</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.13">
+	<name>369</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">4</SimpleData>
+		<SimpleData name="ma_khu_vuc">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.804329702693,10.8754791322613</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.14">
+	<name>370</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">1</SimpleData>
+		<SimpleData name="ma_khu_vuc">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.803772776948,10.8751652690035</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.15">
+	<name>371</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">2</SimpleData>
+		<SimpleData name="ma_khu_vuc">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.802577034902,10.8749311434461</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.16">
+	<name>372</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">2</SimpleData>
+		<SimpleData name="ma_khu_vuc">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.811085153358,10.879197854684</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.17">
+	<name>373</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">1</SimpleData>
+		<SimpleData name="ma_khu_vuc">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.809033826498,10.8851515790104</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.18">
+	<name>374</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">1</SimpleData>
+		<SimpleData name="ma_khu_vuc">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.806233572648,10.8831922234758</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.19">
+	<name>375</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">3</SimpleData>
+		<SimpleData name="ma_khu_vuc">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.808738863359,10.8791910567696</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.20">
+	<name>376</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">1</SimpleData>
+		<SimpleData name="ma_khu_vuc">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.804337180179,10.8768987868053</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.21">
+	<name>377</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">4</SimpleData>
+		<SimpleData name="ma_khu_vuc">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.794934230716,10.8661262785212</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.22">
+	<name>378</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">2</SimpleData>
+		<SimpleData name="ma_khu_vuc">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.795685835341,10.8677969966058</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.23">
+	<name>379</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">3</SimpleData>
+		<SimpleData name="ma_khu_vuc">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.801000810318,10.8672847348043</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.24">
+	<name>380</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">2</SimpleData>
+		<SimpleData name="ma_khu_vuc">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.802009275475,10.8731898478412</coordinates></Point>
+  </Placemark>
+  <Placemark id="25_cay_can_so_hoa.25">
+	<name>381</name>
+	<ExtendedData><SchemaData schemaUrl="#25_cay_can_so_hoa">
+		<SimpleData name="ma_loai">1</SimpleData>
+		<SimpleData name="ma_khu_vuc">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.798668547118,10.8656964272305</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

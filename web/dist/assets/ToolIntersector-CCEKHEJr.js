@@ -1,0 +1,1 @@
+import{n as e}from"./Intersector-CUvb3L0O.js";function t(t){let n=new e(t);return n.options.store=0,n.options.excludeLabels=!0,n}export{t};

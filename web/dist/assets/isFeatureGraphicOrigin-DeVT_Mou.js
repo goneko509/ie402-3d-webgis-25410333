@@ -1,0 +1,1 @@
+var e=Symbol(`isFeatureGraphicOrigin`);function t(t){return!!t&&e in t}export{t as n,e as t};

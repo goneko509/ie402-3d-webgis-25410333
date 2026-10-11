@@ -1,0 +1,1 @@
+import{c as e}from"./vec3f64-DIOQknMY.js";import{g as t}from"./projectionUtils-CUFzJkI3.js";import{t as n}from"./projectVectorToVector-C0IvRgVd.js";function r(e,t,r){return!!n(e,t,a,r.spatialReference)&&(r.x=a[0],r.y=a[1],r.z=a[2],!0)}async function i(e,n,i,a){return await t(n,i.spatialReference,null,a),r(e,n,i)}var a=e();export{r as n,i as t};

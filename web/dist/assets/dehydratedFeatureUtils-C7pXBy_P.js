@@ -1,0 +1,1 @@
+function e(e){return e.type===`point`}export{e as t};

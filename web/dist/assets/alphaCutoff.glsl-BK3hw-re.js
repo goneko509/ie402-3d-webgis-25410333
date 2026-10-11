@@ -1,0 +1,1 @@
+import{n as e,t}from"./AlphaCutoff-Diw6w_WO.js";function n(n){n.constants.add(`alphaCutoff`,`float`,t),n.constants.add(`opacityCutoff`,`float`,e)}export{n as t};

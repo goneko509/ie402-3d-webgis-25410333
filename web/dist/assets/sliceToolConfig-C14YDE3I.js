@@ -1,0 +1,1 @@
+import{j as e}from"./Error-CVoK2uyB.js";import{_ as t}from"./mathUtils-D79yUFwW.js";var n=e(`mac`)?`Meta`:`Control`,r=`Shift`,i=1.15,a=1.15,o=2500,s=.02,c=Math.cos(t(45)),l=Math.cos(t(5)),u=.95,d=.3,f=22.5,p=2.25,m=.3,h=1600,g=.4;export{u as a,l as c,r as d,n as f,f as h,c as i,o as l,g as m,i as n,m as o,h as p,a as r,s,p as t,d as u};

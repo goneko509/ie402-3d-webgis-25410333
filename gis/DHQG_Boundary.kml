@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="document">
+	<name>Dự án bản đồ không có tiêu đề</name>
+	<gx:CascadingStyle kml:id="__managed_style_0ECC7D2F8041D8972C7C_highlight">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_0ECC7D2F8041D8972C7C_normal">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0ECC7D2F8041D8972C7C">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_0ECC7D2F8041D8972C7C_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_0ECC7D2F8041D8972C7C_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="091AB002AE41D8972C56">
+		<name>Làng Đại Học</name>
+		<LookAt>
+			<longitude>106.7953938018297</longitude>
+			<latitude>10.87642938528473</latitude>
+			<altitude>26.65698116213892</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>7525.663418155164</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0ECC7D2F8041D8972C7C</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						106.7987898702159,10.88232840313679,0 106.7972293661961,10.8813889285485,0 106.7956444118996,10.88071806678897,0 106.7931577198609,10.88018129472355,0 106.791217028721,10.88001982474561,0 106.78976808659,10.87999285442275,0 106.7879381898162,10.87985924755287,0 106.7861597508764,10.88004650916507,0 106.7845952777787,10.88044812881001,0 106.7834990554663,10.88114646487527,0 106.7826747660408,10.8819795009198,0 106.781085805364,10.88050090207437,0 106.7812186447666,10.87977436627665,0 106.7806481721583,10.87886109546591,0 106.77509707805,10.86988322484488,0 106.7823722424002,10.86756952780716,0 106.7842932252553,10.86730557542315,0 106.7865953561189,10.86723150478656,0 106.7884805384482,10.86722957147823,0 106.790203173286,10.86704338866915,0 106.7920588245222,10.86645249647169,0 106.7932913681738,10.86562325360049,0 106.7943565518183,10.86441473730249,0 106.795586541313,10.86248291556792,0 106.7994669524649,10.864924726852,0 106.8031289227494,10.86707187443911,0 106.8058729609294,10.86935520636771,0 106.8092528260652,10.87411703344131,0 106.815217136193,10.8819296355513,0 106.8136449425581,10.88330964490405,0 106.8122197760593,10.88456721551279,0 106.8105346721767,10.88575915807468,0 106.8091601850173,10.88633756405342,0 106.8075985950924,10.88682251681534,0 106.8063197075085,10.88770553300104,0 106.8054446201593,10.88870757364372,0 106.8046050163445,10.88776100842255,0 106.8036115277181,10.88593159268093,0 106.8030499233973,10.88489017785495,0 106.8021790787826,10.88385168846527,0 106.8006865242124,10.88321049700498,0 106.7987898702159,10.88232840313679,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

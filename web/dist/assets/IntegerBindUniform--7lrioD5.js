@@ -1,0 +1,1 @@
+import{t as e}from"./Uniform-FnPH-ujw.js";var t=class extends e{constructor(e,t){super(e,`int`,0,(n,r)=>n.setUniform1i(e,t(r)))}};export{t};

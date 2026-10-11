@@ -1,0 +1,1 @@
+import{j as e}from"./Error-CVoK2uyB.js";import"./uuid-CxFjXsEJ.js";import"./index-DxbfLeiq.js";import"./number-DY-pDx_f.js";import"./colorUtils-CiTXmWFC.js";function t(t){return e(t)}export{t};

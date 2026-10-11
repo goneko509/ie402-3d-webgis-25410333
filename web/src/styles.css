@@ -1,0 +1,271 @@
+/* Giao diện theo mockup Chương 3 (thành phần 1 - 6, 8) */
+:root { --xanh: #2e7d32; --xanh-dam: #1b5e20; --xanh-nhat: #e8f5e9; --vien: #d5dbd5; --chu: #1f2a1f; --mo: #5f6b5f; }
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; height: 100%; }
+body { font-family: "Segoe UI", Arial, sans-serif; color: var(--chu); background: #f3f5f2; }
+.app { height: 100%; display: grid; grid-template-rows: 60px 1fr; grid-template-columns: 270px 1fr 350px; }
+
+header { grid-column: 1 / 4; display: flex; align-items: center; gap: 18px; padding: 0 20px; background: var(--xanh-dam); color: #fff; }
+.thuong-hieu { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 19px; white-space: nowrap; }
+.thuong-hieu small { display: block; font-weight: 400; font-size: 13px; opacity: .85; }
+.la { width: 34px; height: 34px; border-radius: 50% 0 50% 0; background: #8bc34a; transform: rotate(45deg); }
+.tim { position: relative; margin-left: 24px; flex: 0 100000 280px; min-width: 200px; display: flex; align-items: center; }   /* hệ số co rất lớn: ô tìm kiếm co hết (tới 200 px) rồi hộp bối cảnh mới co, không bị cắt chữ vì phần lẻ px */
+.tim input { width: 100%; height: 38px; border-radius: 19px; border: none; padding: 0 40px 0 18px; font: 15px inherit; font-family: inherit; }
+.tim button { position: absolute; right: 8px; border: none; background: none; font-size: 22px; cursor: pointer; color: #555; }
+/* kết quả tìm nằm trong ô (bên trái nút kính lúp) để chừa chỗ cho thẻ tài khoản */
+.tim.co-kq input { padding-right: 160px; }
+.kq-tim { position: absolute; right: 38px; max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; font-weight: 600; color: var(--xanh-dam); }
+/* Hộp bối cảnh bản đồ: chiếm chỗ trống giữa ô tìm kiếm và nhóm tài khoản (ô tìm kiếm co trước); 2 dòng: khu / loài | tình trạng */
+.boi-canh { flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 10px; padding: 4px 6px 4px 12px; border-radius: 8px; background: rgba(255,255,255,.12); font-size: 13px; line-height: 1.4; }
+.bc-chu { flex: 1 1 auto; min-width: 0; }
+.bc-dat-lai { flex: none; height: 26px; padding: 0 10px; border: 1px solid rgba(255,255,255,.55); border-radius: 13px; background: transparent; color: #fff; font: 600 12.5px inherit; font-family: inherit; cursor: pointer; }
+.bc-dat-lai:hover:not(:disabled), .bc-dat-lai:focus-visible { background: rgba(255,255,255,.18); }
+.bc-dat-lai:disabled { opacity: .4; cursor: default; }
+.bc-khu { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bc-dong2 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }   /* một dòng chữ liền: hẹp chỗ thì cắt "…" ở cuối */
+.bc-ngan { opacity: .55; margin: 0 8px; }
+.tai-khoan { margin-left: auto; flex: none; min-width: 0; display: flex; align-items: center; gap: 10px; }
+.tai-khoan .nut { flex: none; }
+@media (max-width: 1279px) { .tai-khoan, .the-tk { flex: 0 1 auto; } }  /* màn hẹp: thẻ co lại, rê chuột xem đủ (title) */
+.nut { white-space: nowrap; height: 36px; padding: 0 18px; border-radius: 6px; border: 1px solid transparent; font: 600 15px "Segoe UI", Arial; cursor: pointer; }
+.nut.sang { background: #fff; color: var(--xanh-dam); }
+.nut:disabled { opacity: .6; cursor: not-allowed; }
+
+.panel { background: #fff; padding: 16px; overflow: auto; }
+.panel.trai { border-right: 1px solid var(--vien); }
+.panel.phai { border-left: 1px solid var(--vien); }
+h3 { margin: 0 0 12px; font-size: 16px; text-transform: uppercase; letter-spacing: .4px; color: var(--xanh-dam); }
+h3.cach { margin-top: 22px; }
+/* Mục bung xổ / thu gọn (MucThuGon) */
+.muc + .muc { margin-top: 16px; }
+.muc h3 { margin-bottom: 8px; }
+.muc-tieu-de { all: unset; box-sizing: border-box; width: 100%; display: flex; align-items: center; justify-content: space-between; cursor: pointer;
+  font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit; padding: 2px 0; }
+.muc-tieu-de:focus-visible { outline: 2px solid var(--xanh); outline-offset: 2px; border-radius: 3px; }
+.muc-mui { font-size: 14px; color: var(--mo); transition: transform .15s; }
+.muc:not(.mo) .muc-mui { transform: rotate(-90deg); }
+.muc:not(.mo) h3 { padding-bottom: 8px; border-bottom: 1px solid #eef1ee; }
+.muc-noi-dung { margin-top: 4px; }
+/* Bộ lọc cây */
+.nhom-loc { margin-bottom: 10px; }
+.nhan-loc { font-size: 13px; font-weight: 600; color: var(--chu); margin-bottom: 4px; }
+/* Lọc cây: fieldset (khóa cả mục bằng disabled khi đang chọn loài / tình trạng) */
+fieldset.bo-loc { border: 0; padding: 0; margin: 0; min-width: 0; }
+fieldset.bo-loc:disabled { opacity: .45; }
+fieldset.bo-loc:disabled * { cursor: not-allowed; }
+.o-chon { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; margin: 0 10px 4px 0; cursor: pointer; }
+.o-chon input { accent-color: var(--xanh); margin: 0; }
+/* Nhân bản: nhãn trường còn giữ giá trị cây nguồn; ô xác nhận đã kiểm tra */
+.giong-nguon { font-weight: 400; color: #b26a00; font-size: 12px; }
+.nb-kiem-tra { margin: 4px 0 8px; font-weight: 600; }
+.hang-ve-vi-tri { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: -4px 0 8px; font-size: 13px; color: var(--mo); }
+.hang-ve-vi-tri b { color: #8a4b08; }
+.nhan-co-tat-ca { display: flex; align-items: center; justify-content: space-between; }
+.o-chon.tat-ca { margin: 0; font-weight: 400; color: var(--mo); font-size: 12.5px; }
+.cham.nho { width: 10px; height: 10px; }
+.khoang { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 4px; }
+.khoang input { width: 100%; min-width: 0; height: 30px; border: 1px solid #c8cfc8; border-radius: 5px; padding: 0 6px; font: 13px "Segoe UI", Arial; }
+.khoang span { color: var(--mo); }
+.ket-qua-loc { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 13px; padding: 8px 10px;
+  background: var(--xanh-nhat); border-radius: 6px; }
+.ket-qua-loc b { color: var(--xanh-dam); }
+.ket-qua-loc .nut.nho { height: 28px; padding: 0 10px; font-size: 13px; }
+.lop { display: flex; align-items: center; gap: 10px; padding: 8px 4px; font-size: 15px; border-bottom: 1px dashed #eee; cursor: pointer; }
+.lop input { width: 18px; height: 18px; accent-color: var(--xanh); }
+.mau { width: 22px; height: 12px; border-radius: 2px; margin-left: auto; }
+.mau.vien { border: 2px dashed var(--xanh-dam); }
+.mau.vong { border-radius: 50%; border: 2px solid #e65100; background: rgba(245,124,0,.12); box-shadow: 0 0 0 3px rgba(245,124,0,.18); }
+.chu-giai { display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 3px 2px; }
+.chu-giai i { color: var(--mo); font-size: 12px; }
+/* Loài trong chú giải bấm được -> xem thông tin loài */
+button.chu-giai { all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 8px; width: 100%; font-size: 13px; padding: 3px 4px;
+  border-radius: 4px; cursor: pointer; }
+button.chu-giai:hover, button.chu-giai:focus-visible { background: rgba(46,125,50,.1); }
+button.chu-giai.dang-xem { background: rgba(46,125,50,.16); font-weight: 600; }
+/* Chú giải loài cây nổi góc dưới trái bản đồ: nền bán trong suốt, rõ hơn khi rê chuột */
+.chu-giai-noi { position: absolute; left: 15px; bottom: 26px;   /* lề 15 px đều với cửa sổ thông tin bên cạnh */
+  z-index: 5; max-width: 380px; padding: 6px 10px 6px;
+  background: rgba(255,255,255,.62); backdrop-filter: blur(3px); border-radius: 8px; box-shadow: 0 1px 6px rgba(0,0,0,.15); transition: background .15s; }
+.chu-giai-noi:hover { background: rgba(255,255,255,.88); }
+.chu-giai-noi .cham { width: 12px; height: 12px; }
+.chu-giai-tieu-de { all: unset; box-sizing: border-box; width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  cursor: pointer; font: 700 12.5px "Segoe UI", Arial; text-transform: uppercase; letter-spacing: .3px; color: var(--xanh-dam); padding: 2px 0; }
+.chu-giai-noi.mo .chu-giai-tieu-de { margin-bottom: 5px; padding-bottom: 5px; border-bottom: 1px solid rgba(27,94,32,.28); }   /* đường phân cách tiêu đề / nội dung */
+.chu-giai-noi:not(.mo) .muc-mui { transform: rotate(-90deg); }
+.cham { width: 16px; height: 16px; border-radius: 50%; flex: none; }
+
+main { position: relative; overflow: hidden; }
+.khung-3d { position: absolute; inset: 0; }
+.thong-bao { position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); background: #fff; padding: 12px 18px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,.2); }
+.thong-bao.loi { color: #b71c1c; }
+.crs { position: absolute; left: 16px; top: 16px; background: rgba(255,255,255,.85); padding: 4px 10px; border-radius: 4px; font-size: 13px; }   /* góc trên trái: góc dưới dành cho Chú giải + cửa sổ thông tin */
+
+select { width: 100%; height: 36px; border: 1px solid #c8cfc8; border-radius: 6px; padding: 0 10px; font: 15px "Segoe UI", Arial; background: #fff; }
+.kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0 18px; }
+.kpi { background: var(--xanh-nhat); border-radius: 8px; padding: 10px 12px; }
+.kpi b { display: block; font-size: 22px; color: var(--xanh-dam); }
+.kpi span { font-size: 13px; color: var(--mo); }
+.tieu-de-bd { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.thanh { display: grid; grid-template-columns: 132px 1fr 46px; align-items: center; gap: 8px; width: 100%; font: 13px "Segoe UI", Arial;
+  margin: 2px 0; padding: 4px 2px; border: none; background: none; text-align: left; cursor: pointer; border-radius: 4px; }
+.thanh:hover { background: #f4f7f4; }
+.ten-thanh { display: flex; align-items: center; gap: 4px; min-width: 0; }
+.sao-phu-trach { color: #f5b301; font-size: 15px; line-height: 1; text-shadow: 0 0 1px #a06c00; }
+.thanh.chon { font-weight: 700; }
+.ray { height: 14px; background: #eef2ee; border-radius: 3px; }
+.dac { display: block; height: 100%; background: #81c784; border-radius: 3px; }
+.thanh.chon .dac { background: var(--xanh); }
+/* Thống kê cây xanh (ThongKeCay): thanh ngang theo loài / tình trạng, nhãn trực tiếp */
+.tk-pham-vi { font-size: 13.5px; margin-bottom: 10px; color: var(--mo); }
+.tk-pham-vi b { color: var(--xanh-dam); }
+.tieu-de-bd.cach-tren { margin-top: 12px; }
+.tk-thanh { display: grid; grid-template-columns: 104px 1fr 88px; align-items: center; gap: 8px; font-size: 13px; padding: 3px 2px; border-radius: 4px; }
+.tk-thanh:hover { background: #f4f7f4; }
+/* Thanh bấm được (tập trung nhóm trên bản đồ) */
+button.tk-thanh { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 104px 1fr 88px; align-items: center; gap: 8px; width: 100%;
+  font: 13px "Segoe UI", Arial; padding: 3px 4px; border-radius: 4px; cursor: pointer; color: var(--chu); }
+button.tk-thanh:focus-visible { outline: 2px solid var(--xanh); }
+button.tk-thanh.chon { background: var(--xanh-nhat); box-shadow: inset 3px 0 0 var(--xanh); font-weight: 600; }
+.tk-tap-trung { margin: 10px 0 0; padding: 6px 10px; border-radius: 6px; background: var(--xanh-nhat); font-size: 12.5px; color: var(--xanh-dam); }
+.tk-bo { all: unset; cursor: pointer; margin-left: 6px; color: #1a73e8; font-weight: 600; }
+.tk-bo:hover, .tk-bo:focus-visible { text-decoration: underline; }
+.tk-thanh .dac { box-shadow: inset 0 0 0 1px rgba(0,0,0,.12); }   /* viền mảnh: màu sáng (Lim xẹt, Suy yếu) vẫn thấy mép thanh */
+.tk-nhan { display: flex; align-items: center; gap: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tk-bieu-tuong { font-weight: 700; width: 12px; text-align: center; }
+.tk-so { text-align: right; color: var(--mo); white-space: nowrap; }
+.tk-so b { color: var(--chu); font-weight: 600; }
+.ghi-chu { font-size: 12.5px; color: var(--mo); margin-top: 14px; line-height: 1.4; }
+
+/* ---------- Quản trị (thành phần 7 - 9, UC05 - UC06) ---------- */
+:root { --nau: #8a4b08; --do: #c62828; }
+/* Thẻ tài khoản cạnh ô tìm kiếm: dòng 1 tên + loại tài khoản, dòng 2 khu phụ trách */
+.the-tk { display: flex; align-items: center; gap: 10px; min-width: 0; flex: none; /* ô tìm co trước; dưới 1280 px thẻ mới co */ padding: 5px 12px 5px 6px; border-radius: 24px;
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25); }
+.the-tk .anh-dai-dien { flex: none; }
+.tk-chu { min-width: 0; line-height: 1.25; }
+.tk-dong1 { display: flex; align-items: center; gap: 6px; font-size: 14px; white-space: nowrap; }
+.tk-ten { opacity: .8; font-size: 13px; }
+.nhan-vai-tro { font-size: 11.5px; font-weight: 600; padding: 1px 7px; border-radius: 9px; background: #ffcc80; color: #5d3a00; }
+.ky-thuat .nhan-vai-tro { background: #b3e5fc; color: #01416b; }
+.ky-thuat .anh-dai-dien { background: #b3e5fc; color: #01416b; }
+.tk-dong2 { font-size: 12.5px; opacity: .92; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.anh-dai-dien { width: 30px; height: 30px; border-radius: 50%; background: #ffcc80; color: #5d3a00; display: grid; place-items: center; font-weight: 700; }
+.nut.chinh { background: var(--xanh); color: #fff; }
+.nut.vien { background: #fff; color: var(--chu); border-color: var(--vien); }
+.nut.nho { height: 34px; padding: 0 14px; font-size: 14px; background: #fff; color: var(--chu); border-color: var(--vien); }
+.nut.nho.dang-chon { background: var(--nau); color: #fff; border-color: var(--nau); }
+.nut.nho.nguy-hiem { color: var(--do); border-color: #e57373; }
+.nut.nho.nguy-hiem.dang-chon { background: var(--do); color: #fff; }
+.nut.nguy-hiem-dac { background: var(--do); color: #fff; }
+/* Nhóm Thêm/Sửa/Xóa trên thanh tiêu đề, cạnh ô tìm; .mo = khu đang chọn không thuộc quyền -> mờ, không bấm được */
+.thanh-quan-tri { flex: none; display: flex; align-items: center; gap: 6px; }
+.thanh-quan-tri .nut.nho { height: 34px; padding: 0 12px; }
+.thanh-quan-tri.mo .nut.nho, .thanh-quan-tri.mo .nut.nho:disabled { opacity: .45; background: rgba(255,255,255,.75); filter: grayscale(1); }
+.khu-lam-viec { margin: -4px 0 10px; font-size: 13.5px; color: var(--mo); }
+.khu-lam-viec b { color: var(--nau); }
+.thong-bao-noi.canh-bao-noi { background: #b26a00; }
+.thong-bao-noi { position: absolute; left: 50%; top: 16px; transform: translateX(-50%);   /* trên cùng: đáy dành cho chú giải + cửa sổ thông tin */ z-index: 6; background: var(--xanh-dam); color: #fff;
+  padding: 9px 18px; border-radius: 20px; font-size: 14px; box-shadow: 0 2px 10px rgba(0,0,0,.25); }
+.truong { display: block; margin-bottom: 11px; font-size: 14px; color: var(--mo); }
+.truong input, .truong select { display: block; width: 100%; margin-top: 4px; height: 36px; border: 1px solid #c8cfc8; border-radius: 6px;
+  padding: 0 10px; font: 15px "Segoe UI", Arial; color: var(--chu); background: #fff; }
+.truong input[readonly] { background: #f6f7f5; }
+.hai-cot { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+fieldset { border: none; padding: 0; margin: 0; }
+fieldset:disabled { opacity: .75; }
+.hang-nut { display: flex; gap: 10px; margin-top: 6px; }
+.canh-bao, .thanh-cong { border-radius: 6px; padding: 9px 12px; font-size: 13.5px; margin: 6px 0 12px; }
+.canh-bao { background: #ffebee; color: #b71c1c; border: 1px solid #ef9a9a; }
+.thanh-cong { background: #e8f5e9; color: var(--xanh-dam); border: 1px solid #a5d6a7; }
+.canh-bao b, .thanh-cong b { display: block; }
+.nen-modal { position: fixed; inset: 0; background: rgba(20,30,20,.55); z-index: 50; display: grid; place-items: center; }
+.modal { width: 420px; background: #fff; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,.4); padding: 26px 30px; }
+.modal h2 { margin: 0 0 4px; font-size: 22px; color: var(--xanh-dam); }
+.modal p { margin: 0 0 18px; color: var(--mo); font-size: 14px; }
+.modal .hang-nut .nut.chinh { flex: 1; }
+
+/* ---------- Phân tích nguy cơ (UC07, PhanTichNguyCo) ---------- */
+.pt-dieu-khien { display: grid; gap: 8px; }
+.pt-he-so { display: grid; gap: 4px; font-size: 13px; color: var(--mo); }
+.pt-he-so b { color: var(--chu); }
+.pt-he-so input { width: 100%; accent-color: #e65100; }
+.nut.nho-hon { height: 32px; padding: 0 14px; font-size: 13.5px; }
+.pt-tom-tat { margin: 12px 0 6px; font-size: 13.5px; color: var(--mo); }
+.pt-tom-tat b { color: #c62828; font-size: 15px; }
+.pt-ds { list-style: none; margin: 0; padding: 0; max-height: 300px; overflow: auto; border: 1px solid #eef1ee; border-radius: 6px; }
+.pt-ds li + li { border-top: 1px solid #eef1ee; }
+.pt-dong { all: unset; box-sizing: border-box; width: 100%; display: grid; gap: 3px; padding: 6px 8px; cursor: pointer; font: 13px "Segoe UI", Arial; color: var(--chu); }
+.pt-dong:hover, .pt-dong:focus-visible { background: #fff3e0; }
+.pt-dong1 { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+.pt-dong2 { display: flex; gap: 6px; }
+.pt-tt { margin-left: auto; font-size: 11.5px; padding: 0 6px; border-radius: 8px; background: #e8f5e9; color: var(--xanh-dam); }
+.pt-tt.yeu { background: #fff3cd; color: #7a5300; }
+.pt-tt.nguy { background: #ffebee; color: #b71c1c; }
+.pt-ah { font-size: 12px; padding: 0 6px; border-radius: 4px; border: 1px solid #ef9a9a; color: #b71c1c; background: #fff; }
+.pt-ah.duong { border-color: #ffcc80; color: #8a4b08; }
+
+/* Chú giải màu kết quả phân tích (khớp ký hiệu trên cảnh 3D) */
+.pt-chu-giai { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: 12.5px; color: var(--chu); }
+.pt-chu-giai span { display: inline-flex; align-items: center; gap: 6px; }
+.pt-mau { display: inline-block; flex: none; }
+.pt-mau.vong { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #e65100; background: rgba(245,124,0,.15); }
+.pt-mau.vong-ngoai { width: 16px; height: 16px; border-radius: 50%; border: 1px solid #f57c00; background: rgba(245,124,0,.06); }
+.pt-giai-muc { flex-basis: 100%; }
+.pt-giai-muc .pt-muc { font-weight: 600; }
+.pt-mau.nha { width: 16px; height: 11px; border-radius: 2px; background: rgba(208,59,59,.35); border: 2px solid #d03b3b; }
+.pt-mau.duong { width: 18px; height: 4px; border-radius: 2px; background: #d03b3b; }
+
+/* Cửa sổ thông tin cây (ArcGIS Popup, ghim góc trên trái): nền bán trong suốt như Chú giải loài cây, rõ khi rê chuột.
+   Calcite dựng nền bằng biến --calcite-color-foreground-*; biến CSS truyền xuyên shadow DOM nên đặt trong suốt tại đây. */
+.esri-popup .esri-popup__main-container { background: rgba(255,255,255,.62); backdrop-filter: blur(3px); transition: background .15s;
+  --calcite-color-foreground-1: transparent; --calcite-color-foreground-2: rgba(255,255,255,.35); --calcite-color-foreground-3: rgba(255,255,255,.5); }
+.esri-popup .esri-popup__main-container:hover { background: rgba(255,255,255,.9); }
+.esri-popup .esri-features, .esri-popup .esri-features__content-container, .esri-popup calcite-flow-item { background: transparent; }
+/* calcite-panel nằm trong shadow của calcite-flow-item: nền .container = --calcite-color-background, nền panel = --calcite-flow-background-color.
+   Đặt các biến trên calcite-flow-item (DOM ngoài) để truyền xuống. */
+.esri-popup calcite-flow-item, .esri-popup calcite-action-bar { --calcite-color-foreground-1: transparent; --calcite-color-background: transparent;
+  --calcite-flow-background-color: transparent; --calcite-action-background-color: transparent; }
+
+/* Khôi phục dữ liệu mặc định (admin) */
+.thanh-quan-tri .nut.nho.khoi-phuc { color: #8a4b08; border-color: #ffcc80; }
+.modal.modal-rong { width: 640px; max-width: calc(100vw - 32px); }
+.kp-tom-tat { display: grid; gap: 4px; padding: 10px 12px; border-radius: 6px; background: #fff3e0; font-size: 14px; margin-bottom: 10px; }
+.kp-tom-tat b { color: #b34700; }
+.kp-ds { max-height: 220px; overflow: auto; margin: 0 0 14px; padding: 0 0 0 22px; font-size: 13.5px; line-height: 1.6; }
+.kp-ai { color: var(--mo); font-size: 12.5px; margin-left: 6px; }
+
+/* Hộp khôi phục: thẻ Khôi phục mặc định / Nhật ký thay đổi */
+.kp-the { display: flex; gap: 4px; border-bottom: 1px solid var(--vien); margin: 8px 0 12px; }
+.kp-the button { all: unset; cursor: pointer; padding: 7px 12px; font: 600 14px "Segoe UI", Arial; color: var(--mo); border-bottom: 3px solid transparent; margin-bottom: -1px; }
+.kp-the button.chon { color: var(--xanh-dam); border-bottom-color: var(--xanh); }
+.kp-the button:focus-visible { outline: 2px solid var(--xanh); }
+.nk-ds { list-style: none; margin: 0 0 8px; padding: 0; max-height: 380px; overflow: auto; border: 1px solid #eef1ee; border-radius: 6px; }
+.nk-muc { padding: 8px 10px; border-left: 3px solid #c8cfc8; }
+.nk-muc + .nk-muc { border-top: 1px solid #eef1ee; }
+.nk-muc.them { border-left-color: #0ca30c; } .nk-muc.sua { border-left-color: #e09a00; } .nk-muc.xoa { border-left-color: #d03b3b; }
+.nk-dau { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13.5px; }
+.nk-tt { font-size: 11.5px; font-weight: 700; padding: 1px 7px; border-radius: 8px; background: #eef1ee; }
+.nk-tt.them { background: #e8f5e9; color: #1b5e20; } .nk-tt.sua { background: #fff3cd; color: #7a5300; } .nk-tt.xoa { background: #ffebee; color: #b71c1c; }
+.nk-ai { font-size: 12px; padding: 0 6px; border-radius: 8px; background: #ffcc80; color: #5d3a00; }
+.nk-ai.admin { background: #b3e5fc; color: #01416b; }
+.nk-gio { color: var(--mo); font-size: 12px; }
+.nk-nut { margin-left: auto; height: 28px !important; padding: 0 10px !important; font-size: 12.5px !important; }
+.nk-chi-tiet { margin: 4px 0 0; padding-left: 18px; font-size: 12.5px; color: var(--chu); line-height: 1.5; }
+
+/* Cửa sổ thông tin cây ghim góc dưới trái, nằm ngang ngay bên phải Chú giải loài cây, cao bằng hộp chú giải
+   (--cg-rong do ChuGiaiLoai đo; chiều cao chung --chieu-cao-chung: chieuCaoChung.js); giữa bản đồ để trống cho cây. */
+.esri-popup--is-docked-bottom-left .esri-popup__main-container {
+  margin-left: calc(var(--cg-rong, 300px) + 15px); margin-bottom: -4px;   /* đáy thẳng hàng đáy hộp chú giải */
+  height: var(--chieu-cao-chung, 210px); max-height: var(--chieu-cao-chung, 210px);   /* bằng Chú giải, vừa đủ nội dung */
+  width: calc(100% - var(--cg-rong, 300px) - 15px); max-width: none; }   /* sát mép phải bản đồ, lề 15 px như bên trái */
+/* Đang sửa cây: biểu mẫu nhiều ô nhập hơn -> cửa sổ tạm cao thêm (đỉnh vẫn dưới tâm bản đồ, không che cây) */
+/* Hộp chú giải cao bằng cửa sổ thông tin khi cửa sổ mở (chiều cao chung = khối cao hơn, vừa đủ nội dung) */
+.chu-giai-noi.mo { min-height: var(--chieu-cao-chung, 0px); box-sizing: border-box; }
+
+/* Mức độ nguy hiểm (UC07): nhãn chữ + màu (Cao đỏ, Trung bình cam, Thấp vàng nhạt) */
+.pt-muc { font-size: 11.5px; font-weight: 700; padding: 0 7px; border-radius: 8px; white-space: nowrap; }
+.pt-dong1 .pt-muc { margin-left: auto; }
+.pt-muc.cao { background: #d03b3b; color: #fff; } .pt-muc.tb { background: #f57c00; color: #fff; } .pt-muc.thap { background: #fff3cd; color: #7a5300; }
+.pt-muc-tom-tat { display: flex; gap: 6px; margin-top: 4px; }
+
+.pt-pham-vi { margin: 0; }

@@ -1,0 +1,25 @@
+{
+  "name": "webgis-cay-xanh-api",
+  "version": "1.0.0",
+  "description": "API WebGIS 3D cây xanh Làng Đại học ĐHQG TP.HCM (IE402)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "dev": "node --watch --env-file=.env src/server.js",
+    "start:test": "node --env-file=.env --env-file=.env.test src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mssql": "^12.7.4",
+    "wellknown": "^0.5.0"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}

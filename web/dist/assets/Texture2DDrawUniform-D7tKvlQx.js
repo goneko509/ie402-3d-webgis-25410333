@@ -1,0 +1,1 @@
+import{t as e}from"./Uniform-FnPH-ujw.js";var t=class extends e{constructor(e,t,n){super(e,`sampler2D`,2,(r,i,a)=>r.bindTexture(e,t(i,a),n?.(i,a)))}};export{t};

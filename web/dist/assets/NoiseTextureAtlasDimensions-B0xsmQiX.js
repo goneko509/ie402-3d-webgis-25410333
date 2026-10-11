@@ -1,0 +1,1 @@
+import{j as e}from"./Error-CVoK2uyB.js";var t=e(`esri-mobile`)?64:128,n=t/128,r=Math.ceil(Math.sqrt(t)),i=(t+2)*r,a=1e5,o=i/1560;export{a,r as i,t as n,i as o,n as r,o as t};

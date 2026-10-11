@@ -1,0 +1,52 @@
+[
+ {
+  "ma": 1,
+  "ten": "Khu phía Tây",
+  "ha": 303.53,
+  "n": 96,
+  "mat_do": 0.32,
+  "che_phu": 0.27,
+  "tan_m2": 8254,
+  "the_tich": 63727
+ },
+ {
+  "ma": 2,
+  "ten": "Khu Trung tâm Marie Curie - Isaac Newton",
+  "ha": 42.24,
+  "n": 45,
+  "mat_do": 1.07,
+  "che_phu": 0.99,
+  "tan_m2": 4165,
+  "the_tich": 37421
+ },
+ {
+  "ma": 3,
+  "ten": "Khu Quảng trường Sáng tạo",
+  "ha": 15.43,
+  "n": 36,
+  "mat_do": 2.33,
+  "che_phu": 2.24,
+  "tan_m2": 3451,
+  "the_tich": 27428
+ },
+ {
+  "ma": 4,
+  "ten": "Khu Đông Bắc",
+  "ha": 148.97,
+  "n": 29,
+  "mat_do": 0.19,
+  "che_phu": 0.16,
+  "tan_m2": 2437,
+  "the_tich": 19940
+ },
+ {
+  "ma": 5,
+  "ten": "Khu Đông Nam",
+  "ha": 106.1,
+  "n": 127,
+  "mat_do": 1.2,
+  "che_phu": 1.09,
+  "tan_m2": 11561,
+  "the_tich": 98234
+ }
+]

@@ -1,0 +1,335 @@
+<mxfile host="Electron" pages="3">
+  <diagram name="Page-1" id="9LuqM5YtivSR9RP0aL0p">
+    <mxGraphModel dx="1814" dy="2301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFFFFF;fontSize=19;align=left;" value="" vertex="1">
+          <mxGeometry height="650" width="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="box_L1_title" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#1B5E20;align=center;" value="Dữ liệu và&lt;br&gt;cảnh 3D" vertex="1">
+          <mxGeometry height="195" width="195" x="20" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="box_L1_body" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#F9FBF9;strokeColor=#2E7D32;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=21;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;" value="&lt;b&gt;• Dữ liệu và cảnh 3D:&lt;/b&gt; dữ liệu lấy trực tiếp từ CSDL qua REST API. Cảnh 3D hiển thị ngay trong hệ tọa độ VN-2000 / UTM 48N. Mỗi cây được dựng theo mô hình rút gọn: thân trụ có đường kính bằng DBH, cao &lt;i&gt;(1 - k)H&lt;/i&gt;; tán dạng cầu co giãn rộng &lt;i&gt;2R&lt;/i&gt;, cao &lt;i&gt;kH&lt;/i&gt;, màu theo loài. Lớp Vùng che phủ là hình chiếu tán xuống mặt đất (hình tròn bán kính &lt;i&gt;R&lt;/i&gt;), cùng định nghĩa với phép tính che phủ; lớp ảnh vệ tinh lấy từ dịch vụ Esri World Imagery." vertex="1">
+          <mxGeometry height="195" width="520" x="220" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="box_L2_title" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#F57F17;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#E65100;align=center;" value="Tra cứu, lọc và&lt;br&gt;xem theo nhóm" vertex="1">
+          <mxGeometry height="155" width="195" x="20" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="box_L2_body" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#F57F17;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=21;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;" value="&lt;b&gt;• Tra cứu, lọc và xem theo nhóm:&lt;/b&gt; tìm theo mã hoặc loài; Lọc cây theo thuộc tính; xem theo loài và tình trạng (song song với nhau), bản đồ tự tập trung vào khu có nhiều cây thỏa điều kiện nhất; hộp bối cảnh luôn cho biết khu, loài, tình trạng đang xem." vertex="1">
+          <mxGeometry height="155" width="520" x="220" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="box_L3_title" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00695C;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#004D40;align=center;" value="Thống kê&lt;br&gt;che phủ" vertex="1">
+          <mxGeometry height="125" width="195" x="20" y="439" as="geometry" />
+        </mxCell>
+        <mxCell id="box_L3_body" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#F4FBF9;strokeColor=#00695C;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=21;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;" value="&lt;b&gt;• Thống kê che phủ:&lt;/b&gt; số liệu do thủ tục &lt;b&gt;sp_thong_ke_che_phu&lt;/b&gt; tính trong CSDL, cho toàn vùng hoặc từng khu, được đối chiếu với QGIS ở mục Kiểm định hệ thống." vertex="1">
+          <mxGeometry height="125" width="520" x="220" y="439" as="geometry" />
+        </mxCell>
+        <mxCell id="box_R1_title" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#B71C1C;align=center;" value="Phân tích&amp;nbsp;&lt;div&gt;nguy cơ ngã đổ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="195" x="760" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="box_R1_body" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFF9FA;strokeColor=#C62828;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=21;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;" value="&lt;b&gt;• Phân tích nguy cơ ngã đổ:&lt;/b&gt; vùng ngã đổ &lt;i&gt;1,5 × H&lt;/i&gt;, mức nguy hiểm theo vùng mục tiêu ISA; kết quả trình bày ở mục Kết quả phân tích nguy cơ ngã đổ." vertex="1">
+          <mxGeometry height="110" width="520" x="960" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="box_R2_title" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#E65100;align=center;" value="Quản lý cây&lt;br&gt;(Kiểm tra 2 lớp)" vertex="1">
+          <mxGeometry height="240" width="195" x="760" y="187" as="geometry" />
+        </mxCell>
+        <mxCell id="box_R2_body" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFFBF5;strokeColor=#EF6C00;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=21;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;" value="&lt;b&gt;• Quản lý cây:&lt;/b&gt; Người quản lý khu thêm, nhân bản, sửa (kể cả dời vị trí) và xóa cây trong khu được phân công. Vị trí được kiểm tra hai lớp: giao diện chặn ngay khi nhấp ngoài khu, trong nền tòa nhà hoặc cách cây khác dưới 1 m (Hình 33d); trigger trong CSDL chặn lại một lần nữa (lỗi 50104, 50102, 50103) nên không thể ghi sai kể cả khi gọi API trực tiếp. Mọi thay đổi được ghi vào nhật ký kèm giá trị cũ, giá trị mới và người thao tác; cảnh 3D và thống kê cập nhật ngay." vertex="1">
+          <mxGeometry height="240" width="520" x="960" y="187" as="geometry" />
+        </mxCell>
+        <mxCell id="box_R3_title" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#4A148C;align=center;" value="Quản trị&lt;br&gt;hệ thống" vertex="1">
+          <mxGeometry height="125" width="195" x="760" y="439" as="geometry" />
+        </mxCell>
+        <mxCell id="box_R3_body" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FCF8FD;strokeColor=#6A1B9A;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=21;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;" value="&lt;b&gt;• Quản trị hệ thống:&lt;/b&gt; tài khoản kỹ thuật không bị giới hạn khu, xem trước rồi khôi phục dữ liệu mặc định (hoàn tác thay đổi của người quản lý, giữ thay đổi của admin) và hoàn tác từng thay đổi theo nhật ký." vertex="1">
+          <mxGeometry height="125" width="520" x="960" y="439" as="geometry" />
+        </mxCell>
+        <mxCell id="bottom_bar" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#607D8B;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=19;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=15;spacingRight=15;" value="&lt;b&gt;Hiện thực &amp;amp; Triển khai:&lt;/b&gt; Ứng dụng WebGIS hiện thực kiến trúc 3 lớp ở Chương 3 và đang chạy trên &lt;b&gt;Microsoft Azure&lt;/b&gt; (bản triển khai ngày 09/10/2026, CSDL trên Azure đã được cập nhật đủ các script đến &lt;b&gt;db/25&lt;/b&gt;). Giao diện theo đúng thiết kế ở Chương 3 (Hình 23, Bảng 35). Cả &lt;b&gt;15 use case&lt;/b&gt; ở Chương 2 đều đã được hiện thực (Bảng 37)." vertex="1">
+          <mxGeometry height="58" width="1460" x="20" y="577" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_L1" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#333333;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#111111;align=center;" value="Chức năng&amp;nbsp;&lt;div&gt;&amp;amp; Hiện thực&lt;/div&gt;" vertex="1">
+          <mxGeometry height="58" width="195" x="20" y="-3" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_L2" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Chi tiết kỹ thuật &amp;amp; Dữ liệu" vertex="1">
+          <mxGeometry height="58" width="520" x="220" y="-3" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_R1" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#333333;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#111111;align=center;" value="Chức năng&amp;nbsp;&lt;div&gt;&amp;amp; Hiện thực&lt;/div&gt;" vertex="1">
+          <mxGeometry height="58" width="195" x="760" y="-3" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_R2" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Chi tiết kỹ thuật &amp;amp; Dữ liệu" vertex="1">
+          <mxGeometry height="58" width="520" x="960" y="-3" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="oETbz7Qi_CXVwSisRjNq" name="Page-2">
+    <mxGraphModel dx="1814" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFFFFF;fontSize=20;" value="" vertex="1">
+          <mxGeometry height="650" width="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="L_H1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Bước" vertex="1">
+          <mxGeometry height="45" width="60" x="20" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="L_H2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Thao tác" vertex="1">
+          <mxGeometry height="45" width="230" x="80" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="L_H3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Mong đợi" vertex="1">
+          <mxGeometry height="45" width="190" x="310" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="L_H4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Thực tế" vertex="1">
+          <mxGeometry height="45" width="165" x="500" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="L_H5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Kết quả" vertex="1">
+          <mxGeometry height="45" width="75" x="665" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R1_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="3.1" vertex="1">
+          <mxGeometry height="99" width="60" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R1_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Tìm theo mã cây = 14" vertex="1">
+          <mxGeometry height="99" width="230" x="80" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R1_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="1 cây, loài Me tây (mã 4)" vertex="1">
+          <mxGeometry height="99" width="190" x="310" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R1_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="1 cây, mã loài 4" vertex="1">
+          <mxGeometry height="99" width="165" x="500" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R1_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="99" width="75" x="665" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R2_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="3.2" vertex="1">
+          <mxGeometry height="99" width="60" x="20" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R2_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Tìm theo tên loài&amp;nbsp;&lt;div&gt;“Me tây”&lt;/div&gt;" vertex="1">
+          <mxGeometry height="99" width="230" x="80" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R2_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Bằng số cây mã loài 4 (70)" vertex="1">
+          <mxGeometry height="99" width="190" x="310" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R2_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="70 cây" vertex="1">
+          <mxGeometry height="99" width="165" x="500" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R2_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="99" width="75" x="665" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R3_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="4.1" vertex="1">
+          <mxGeometry height="99" width="60" x="20" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R3_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Đăng nhập sai mật khẩu" vertex="1">
+          <mxGeometry height="99" width="230" x="80" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R3_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Từ chối (lỗi 50201)" vertex="1">
+          <mxGeometry height="99" width="190" x="310" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R3_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Lỗi 50201" vertex="1">
+          <mxGeometry height="99" width="165" x="500" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R3_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="99" width="75" x="665" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R4_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="4.2" vertex="1">
+          <mxGeometry height="99" width="60" x="20" y="357" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R4_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Đăng nhập &lt;font face=&quot;Consolas, monospace&quot;&gt;ttb&lt;/font&gt; (phụ trách khu 2, 5)" vertex="1">
+          <mxGeometry height="99" width="230" x="80" y="357" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R4_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Thành công, có phiên làm việc" vertex="1">
+          <mxGeometry height="99" width="190" x="310" y="357" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R4_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Mã tài khoản 2, phiên = 2" vertex="1">
+          <mxGeometry height="99" width="165" x="500" y="357" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R4_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="99" width="75" x="665" y="357" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R5_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="4.3" vertex="1">
+          <mxGeometry height="99" width="60" x="20" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R5_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Thêm cây trong khu 2, không nhập mã khu" vertex="1">
+          <mxGeometry height="99" width="230" x="80" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R5_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Thành công, khu tự gán = 2" vertex="1">
+          <mxGeometry height="99" width="190" x="310" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R5_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Thêm được, mã khu = 2" vertex="1">
+          <mxGeometry height="99" width="165" x="500" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R5_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="99" width="75" x="665" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="R_H1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Bước" vertex="1">
+          <mxGeometry height="45" width="60" x="760" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="R_H2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Thao tác" vertex="1">
+          <mxGeometry height="45" width="235" x="820" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="R_H3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Mong đợi" vertex="1">
+          <mxGeometry height="45" width="185" x="1055" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="R_H4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Thực tế" vertex="1">
+          <mxGeometry height="45" width="165" x="1240" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="R_H5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Kết quả" vertex="1">
+          <mxGeometry height="45" width="75" x="1405" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R1_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="4.4" vertex="1">
+          <mxGeometry height="82.5" width="60" x="760" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R1_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Sửa chiều cao cây vừa thêm" vertex="1">
+          <mxGeometry height="82.5" width="235" x="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R1_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Chiều cao = 9,0 m" vertex="1">
+          <mxGeometry height="82.5" width="185" x="1055" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R1_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="9,0 m" vertex="1">
+          <mxGeometry height="82.5" width="165" x="1240" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R1_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="82.5" width="75" x="1405" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R2_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="4.5" vertex="1">
+          <mxGeometry height="82.5" width="60" x="760" y="142.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R2_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Xóa cây vừa thêm" vertex="1">
+          <mxGeometry height="82.5" width="235" x="820" y="142.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R2_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Không còn bản ghi" vertex="1">
+          <mxGeometry height="82.5" width="185" x="1055" y="142.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R2_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="0 bản ghi" vertex="1">
+          <mxGeometry height="82.5" width="165" x="1240" y="142.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R2_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="82.5" width="75" x="1405" y="142.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R3_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="4.6" vertex="1">
+          <mxGeometry height="82.5" width="60" x="760" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R3_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Thêm cây trong khu 1 (người khác phụ trách)" vertex="1">
+          <mxGeometry height="82.5" width="235" x="820" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R3_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Từ chối (lỗi 50104)" vertex="1">
+          <mxGeometry height="82.5" width="185" x="1055" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R3_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Lỗi 50104" vertex="1">
+          <mxGeometry height="82.5" width="165" x="1240" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R3_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="82.5" width="75" x="1405" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R4_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="4.7" vertex="1">
+          <mxGeometry height="82.5" width="60" x="760" y="307.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R4_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Sửa một cây ở khu 1 (người khác phụ trách)" vertex="1">
+          <mxGeometry height="82.5" width="235" x="820" y="307.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R4_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Từ chối (lỗi 50104)" vertex="1">
+          <mxGeometry height="82.5" width="185" x="1055" y="307.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R4_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Lỗi 50104" vertex="1">
+          <mxGeometry height="82.5" width="165" x="1240" y="307.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R4_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="82.5" width="75" x="1405" y="307.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R5_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="4.8" vertex="1">
+          <mxGeometry height="82.5" width="60" x="760" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R5_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Thêm cây ngoài vùng nghiên cứu" vertex="1">
+          <mxGeometry height="82.5" width="235" x="820" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R5_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Từ chối (lỗi 50102)" vertex="1">
+          <mxGeometry height="82.5" width="185" x="1055" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R5_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Lỗi 50102" vertex="1">
+          <mxGeometry height="82.5" width="165" x="1240" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R5_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="82.5" width="75" x="1405" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R6_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;align=center;" value="4.9" vertex="1">
+          <mxGeometry height="82.5" width="60" x="760" y="472.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R6_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;fontStyle=1" value="Kiểm tra dữ liệu sau kiểm thử" vertex="1">
+          <mxGeometry height="82.5" width="235" x="820" y="472.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R6_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="Vẫn 333 cây" vertex="1">
+          <mxGeometry height="82.5" width="185" x="1055" y="472.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R6_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;align=left;spacingLeft=8;" value="333 cây" vertex="1">
+          <mxGeometry height="82.5" width="165" x="1240" y="472.5" as="geometry" />
+        </mxCell>
+        <mxCell id="R_R6_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#B0BEC5;fontFamily=Times New Roman;fontSize=20;fontStyle=1;fontColor=#1B5E20;align=center;" value="Đạt" vertex="1">
+          <mxGeometry height="82.5" width="75" x="1405" y="472.5" as="geometry" />
+        </mxCell>
+        <mxCell id="bottom_bar" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#607D8B;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=20;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=15;spacingRight=15;" value="&lt;b&gt;Kiểm thử CSDL cho tiến trình Tìm kiếm cây theo mã/loại &amp;amp; Thêm / nhân bản / sửa / xóa cây (&lt;/b&gt;&lt;font face=&quot;Consolas, monospace&quot; style=&quot;font-weight: bold;&quot;&gt;script db/13_kiem_thu_3_4.sql&lt;/font&gt;&lt;b&gt;):&lt;/b&gt; Hoàn thành &lt;b&gt;11/11 bước (Đạt 100%)&lt;/b&gt; — xác nhận chính xác truy vấn mã/loài, xác thực đăng nhập (lỗi 50201), trigger tự gán khu vực, phân quyền theo phiên làm việc (lỗi 50104), kiểm tra ranh giới vùng nghiên cứu (lỗi 50102) và bảo toàn dữ liệu (333 cây)." vertex="1">
+          <mxGeometry height="82.5" width="1460" x="20" y="575" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="96jZmih193M4YdoR4mYM" name="Page-3">
+    <mxGraphModel dx="1814" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFFFFF;fontSize=24;" value="" vertex="1">
+          <mxGeometry height="650" width="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="H1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Bộ kiểm thử" vertex="1">
+          <mxGeometry height="52" width="260" x="20" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="H2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Công cụ" vertex="1">
+          <mxGeometry height="52" width="190" x="280" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="H3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Nội dung chính" vertex="1">
+          <mxGeometry height="52" width="845" x="470" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="H4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#0D47A1;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#FFFFFF;align=center;" value="Kết quả" vertex="1">
+          <mxGeometry height="52" width="165" x="1315" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="R1_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#0D47A1;align=center;spacingLeft=16;spacingRight=12;" value="REST API" vertex="1">
+          <mxGeometry height="162" width="260" x="20" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R1_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontColor=#111111;align=center;" value="Python&lt;br&gt;&lt;font face=&quot;Consolas, monospace&quot;&gt;requests&lt;/font&gt;" vertex="1">
+          <mxGeometry height="162" width="190" x="280" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R1_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;" value="Đọc dữ liệu, lớp nền, tìm kiếm, thống kê; đăng nhập đúng / sai; thêm, sửa, dời vị trí, xóa trong và ngoài khu phụ trách; vi phạm ràng buộc (DBH, ngày trồng, vị trí ngoài vùng, trong nền tòa nhà) trả đúng mã lỗi; phân tích nguy cơ theo vùng ISA; quyền khôi phục, nhật ký, hoàn tác; phiên CSDL được xóa sau mỗi thao tác" vertex="1">
+          <mxGeometry height="162" width="845" x="470" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R1_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#1B5E20;align=center;" value="42/42 Đạt" vertex="1">
+          <mxGeometry height="162" width="165" x="1315" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R2_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#00695C;align=center;spacingLeft=16;spacingRight=12;" value="Giao diện người dùng (UC01–UC04, UC07–UC09)" vertex="1">
+          <mxGeometry height="162" width="260" x="20" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="R2_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontColor=#111111;align=center;" value="Puppeteer" vertex="1">
+          <mxGeometry height="162" width="190" x="280" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="R2_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;" value="Cảnh 3D; 7 lớp và chú giải 4 loài; thống kê 333 cây; bật / tắt lớp, ảnh vệ tinh; tìm mã 14, tìm “Sao đen” (91 cây); chọn khu căn vừa khung nhìn; Lọc cây khớp CSDL; xem theo loài, tình trạng và hộp bối cảnh; phân tích nguy cơ và lớp Vùng ngã đổ; không có lỗi JavaScript" vertex="1">
+          <mxGeometry height="162" width="845" x="470" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="R2_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#1B5E20;align=center;" value="23/23 Đạt" vertex="1">
+          <mxGeometry height="162" width="165" x="1315" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="R3_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#C62828;align=center;spacingLeft=16;spacingRight=12;" value="Giao diện quản trị (UC05, UC06, UC10)" vertex="1">
+          <mxGeometry height="166" width="260" x="20" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="R3_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontColor=#111111;align=center;" value="Puppeteer" vertex="1">
+          <mxGeometry height="166" width="190" x="280" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="R3_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontColor=#111111;align=left;verticalAlign=middle;spacingLeft=16;spacingRight=16;" value="Đăng nhập sai bị báo lỗi; thẻ tài khoản đúng khu phụ trách; Thêm cây chỉ bật ở khu phụ trách, căn khu vừa khung nhìn; chặn vị trí ngoài khu, trong tòa nhà; thêm, xóa, nhân bản (chặn đặt sát cây khác), sửa ở sidebar và dời vị trí rồi trả lại chính xác; cây khu khác bị khóa Sửa / Xóa; admin mở xem trước khôi phục; đăng xuất" vertex="1">
+          <mxGeometry height="166" width="845" x="470" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="R3_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#90A4AE;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#1B5E20;align=center;" value="25/25 Đạt" vertex="1">
+          <mxGeometry height="166" width="165" x="1315" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="bottom_bar" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#607D8B;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=24;fontColor=#111111;align=center;verticalAlign=middle;spacingLeft=15;spacingRight=15;" value="&lt;b&gt;Tổng hợp kiểm thử tự động ứng dụng WebGIS (Bảng 43):&lt;/b&gt; Vượt qua toàn bộ &lt;b&gt;90/90 kịch bản kiểm thử (Đạt 100%)&lt;/b&gt; trên cả tầng dịch vụ (&lt;b&gt;42/42&lt;/b&gt; REST API bằng Python &lt;font face=&quot;Consolas, monospace&quot;&gt;requests&lt;/font&gt;) và tầng trình bày (&lt;b&gt;23/23&lt;/b&gt; Giao diện người dùng + &lt;b&gt;25/25&lt;/b&gt; Giao diện quản trị bằng &lt;b&gt;Puppeteer&lt;/b&gt;)." vertex="1">
+          <mxGeometry height="56" width="1460" x="20" y="576" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

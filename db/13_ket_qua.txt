@@ -1,0 +1,14 @@
+﻿Changed database context to 'ie402_green_space'.
+stt|buoc|mong_doi|thuc_te|ket_qua
+---|----|--------|-------|-------
+3.1|Tìm theo mã cây = 14|1 cây, loài Me tây (mã 4)|1 cây, mã loài 4|Đạt
+3.2|Tìm theo tên loài "Me tây"|Bằng số cây mã loài 4 (70)|70 cây|Đạt
+4.1|Đăng nhập sai mật khẩu|Từ chối (lỗi 50201)|Lỗi 50201|Đạt
+4.2|Đăng nhập ttb (phụ trách khu 2, 5)|Thành công, có phiên làm việc|ma_tk = 2; SESSION_CONTEXT = 2|Đạt
+4.3|Thêm cây trong khu 2 (không nhập mã khu)|Thành công, khu tự gán = 2|ma_cay = 382, ma_khu_vuc = 2|Đạt
+4.4|Sửa chiều cao cây vừa thêm|Chiều cao = 9,0 m|chieu_cao = 9.00|Đạt
+4.5|Xóa cây vừa thêm|Không còn bản ghi|0 bản ghi|Đạt
+4.6|Thêm cây trong khu 1 (của người khác)|Từ chối (lỗi 50104)|Lỗi 50104|Đạt
+4.7|Sửa cây 209 ở khu 1 (của người khác)|Từ chối (lỗi 50104)|Lỗi 50104|Đạt
+4.8|Thêm cây ngoài vùng nghiên cứu|Từ chối (lỗi 50102)|Lỗi 50102|Đạt
+4.9|Dữ liệu sau kiểm thử|Vẫn 333 cây|333 cây|Đạt

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Spike SceneView EPSG:3405</title>
+<link rel="stylesheet" href="https://js.arcgis.com/__V__/esri/themes/light/main.css">
+<style>html, body, #view { margin: 0; width: 100%; height: 100%; } #log { position: absolute; left: 8px; bottom: 8px; background: #fff; font: 12px monospace; padding: 4px 8px; }</style>
+<script src="data.js"></script>
+<script type="module" src="https://js.arcgis.com/__V__/"></script>
+</head>
+<body>
+<div id="view"></div>
+<div id="log">đang tải...</div>
+<script type="module">
+// Spike (đặc tả mục 7): SceneView chế độ local với hệ tọa độ phẳng VN-2000 / UTM 48N (wkid 3405), không basemap.
+// Dữ liệu (data.js) lấy từ API: một số cây + tòa nhà quanh cây 14, tọa độ EPSG:3405. SDK 5.x: nạp module bằng $arcgis.import.
+const [Map, SceneView, FeatureLayer, SpatialReference, Extent, reactiveUtils] = await $arcgis.import([
+  '@arcgis/core/Map.js', '@arcgis/core/views/SceneView.js', '@arcgis/core/layers/FeatureLayer.js',
+  '@arcgis/core/geometry/SpatialReference.js', '@arcgis/core/geometry/Extent.js', '@arcgis/core/core/reactiveUtils.js']);
+{
+  const sr = new SpatialReference({ wkid: 3405 });
+  const log = (t) => { document.getElementById('log').textContent = t; window.SPIKE = t; };
+  const K = 0.75;
+  const poly = (g) => ({ type: 'polygon', rings: g.type === 'Polygon' ? g.coordinates : g.coordinates.flat(1), spatialReference: sr });
+
+  const buildings = new FeatureLayer({
+    source: DATA.toaNha.map((f, i) => ({ geometry: poly(f.geometry), attributes: { oid: i + 1, chieu_cao: Math.min(f.properties.chieu_cao, 45) } })),
+    objectIdField: 'oid', fields: [{ name: 'oid', type: 'oid' }, { name: 'chieu_cao', type: 'double' }],
+    geometryType: 'polygon', spatialReference: sr,
+    renderer: { type: 'simple', symbol: { type: 'polygon-3d', symbolLayers: [{ type: 'extrude', material: { color: '#d9d6cf' }, edges: { type: 'solid', color: [90, 90, 90, 0.4] } }] },
+      visualVariables: [{ type: 'size', field: 'chieu_cao', valueUnit: 'meters' }] },
+  });
+
+  const treeFields = [{ name: 'oid', type: 'oid' }, { name: 'ma_cay', type: 'integer' }, { name: 'ma_loai', type: 'integer' },
+    { name: 'chieu_cao', type: 'double' }, { name: 'ban_kinh_tan', type: 'double' }, { name: 'dbh', type: 'double' }];
+  const treeSource = () => DATA.cay.map((f, i) => ({
+    geometry: { type: 'point', x: f.geometry.coordinates[0], y: f.geometry.coordinates[1], spatialReference: sr },
+    attributes: { oid: i + 1, ...Object.fromEntries(['ma_cay', 'ma_loai', 'chieu_cao', 'ban_kinh_tan', 'dbh'].map((k) => [k, f.properties[k]])) },
+  }));
+  // Thân: trụ đường kính DBH, cao (1 - k)H
+  const trunks = new FeatureLayer({
+    source: treeSource(), objectIdField: 'oid', fields: treeFields, geometryType: 'point', spatialReference: sr,
+    elevationInfo: { mode: 'on-the-ground' },
+    renderer: { type: 'simple', symbol: { type: 'point-3d', symbolLayers: [{ type: 'object', resource: { primitive: 'cylinder' }, material: { color: '#7b5a3c' }, anchor: 'bottom' }] },
+      visualVariables: [
+        { type: 'size', axis: 'width-and-depth', valueExpression: '$feature.dbh / 100', valueUnit: 'meters' },
+        { type: 'size', axis: 'height', valueExpression: `$feature.chieu_cao * ${1 - K}`, valueUnit: 'meters' }] },
+  });
+  // Tán: cầu rộng 2R, cao kH, đáy tán ở độ cao (1 - k)H
+  const crowns = new FeatureLayer({
+    source: treeSource(), objectIdField: 'oid', fields: treeFields, geometryType: 'point', spatialReference: sr,
+    elevationInfo: { mode: 'relative-to-ground', featureExpressionInfo: { expression: `$feature.chieu_cao * ${1 - K}` }, unit: 'meters' },
+    renderer: { type: 'unique-value', field: 'ma_loai',
+      defaultSymbol: { type: 'point-3d', symbolLayers: [{ type: 'object', resource: { primitive: 'sphere' }, material: { color: '#3d9970' }, anchor: 'bottom' }] },
+      uniqueValueInfos: [[1, '#6aa84f'], [2, '#2e6b30'], [3, '#b5c934'], [4, '#3d9970']].map(([v, c]) => ({ value: v,
+        symbol: { type: 'point-3d', symbolLayers: [{ type: 'object', resource: { primitive: 'sphere' }, material: { color: c }, anchor: 'bottom' }] } })),
+      visualVariables: [
+        { type: 'size', axis: 'width-and-depth', valueExpression: '$feature.ban_kinh_tan * 2', valueUnit: 'meters' },
+        { type: 'size', axis: 'height', valueExpression: `$feature.chieu_cao * ${K}`, valueUnit: 'meters' }] },
+    popupTemplate: { title: 'Cây #{ma_cay}', content: 'H {chieu_cao} m, R {ban_kinh_tan} m, DBH {dbh} cm' },
+  });
+
+  const [cx, cy] = DATA.tam;
+  const view = new SceneView({
+    container: 'view', viewingMode: 'local', spatialReference: sr,
+    map: new Map({ layers: [buildings, trunks, crowns], ground: { surfaceColor: '#e4ead9' } }),
+    clippingArea: new Extent({ xmin: cx - 300, ymin: cy - 300, xmax: cx + 300, ymax: cy + 300, spatialReference: sr }),
+    camera: { position: { x: cx + 120, y: cy - 200, z: 160, spatialReference: sr }, heading: 330, tilt: 60 },
+    environment: { background: { type: 'color', color: [233, 238, 243] }, starsEnabled: false, atmosphereEnabled: false },
+  });
+  view.when(async () => {
+    await Promise.all([buildings, trunks, crowns].map((l) => view.whenLayerView(l)));
+    await reactiveUtils.whenOnce(() => !view.updating);
+    log(`OK wkid=${view.spatialReference.wkid} mode=${view.viewingMode} cay=${DATA.cay.length} toa_nha=${DATA.toaNha.length}`);
+  }, (e) => log('LOI ' + e.message));
+}
+</script>
+</body>
+</html>

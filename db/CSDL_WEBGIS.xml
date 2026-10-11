@@ -1,0 +1,4 @@
+<!DOCTYPE connections>
+<qgsMssqlConnections version="1.0">
+    <mssql host="" password="123" username="sa" sslmode="1" name="CSDL_WebGIS" saveUsername="true" estimatedMetadata="true" port="" service="urban_green_space" database="ie402_green_space" savePassword="true"/>
+</qgsMssqlConnections>

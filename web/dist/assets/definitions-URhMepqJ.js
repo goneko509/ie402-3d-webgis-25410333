@@ -1,0 +1,1 @@
+var e=256/360,t=1.05,n=1.15,r=1024;export{r as i,e as n,n as r,t};

@@ -1,0 +1,1 @@
+import{a as e}from"./HUDIntersectorResult-DoQSrQnS.js";import{t}from"./IntersectorTarget-g_nvOJHu.js";var n=class extends t{constructor(e,t,n,r,i){super(e,t),this.layerViewUid=e,this.graphicUid=t,this.triangleNr=n,this.baseBoundingSphere=r,this.numLodLevels=i}};function r(t){return e(t)&&t.intersector===3&&!!t.target}export{r as n,n as t};

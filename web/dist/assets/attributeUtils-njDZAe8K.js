@@ -1,0 +1,1 @@
+function e(e,n,r){if(!r||n==null)return null;if(!e)return t(n,r);let i=e.get(r);return i?n[i.name]:null}function t(e,t){let n=t.toLowerCase();for(let t in e)if(t.toLowerCase()===n)return e[t];return null}export{e as t};

@@ -1,0 +1,1 @@
+import"./screenUtils-CHZh2QsI.js";import"./vec4f64-CjgU5APJ.js";import"./vec4-B-G2J025.js";import"./NoParameters-XZJ-8n06.js";import"./glsl-D85RBwKC.js";import"./ShaderBuilder-DxA0HNjK.js";import{et as e,tt as t}from"./index-DxbfLeiq.js";export{e as MagnifierPassParameters,t as build};

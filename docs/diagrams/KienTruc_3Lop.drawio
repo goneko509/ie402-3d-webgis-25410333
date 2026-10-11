@@ -1,0 +1,183 @@
+<mxfile host="65bd71144e">
+    <diagram id="kientruc" name="KienTruc_3Lop">
+        <mxGraphModel dx="722" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1260" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="esri" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=0;fillColor=#e6e6e6;strokeColor=#333333;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Dịch vụ ảnh vệ tinh&lt;/b&gt;&lt;br&gt;Esri World Imagery" vertex="1">
+                    <mxGeometry height="52" width="230" x="60" y="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="act0" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;fontStyle=1;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="Người dùng" vertex="1">
+                    <mxGeometry height="60" width="30" x="425" y="12" as="geometry"/>
+                </mxCell>
+                <mxCell id="act1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;fontStyle=1;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="Người quản lý khu" vertex="1">
+                    <mxGeometry height="60" width="30" x="615" y="12" as="geometry"/>
+                </mxCell>
+                <mxCell id="act2" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;fontStyle=1;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="Quản trị hệ thống" vertex="1">
+                    <mxGeometry height="60" width="30" x="805" y="12" as="geometry"/>
+                </mxCell>
+                <mxCell id="l1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=3;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontStyle=1;strokeColor=#666666;fontSize=17;fillColor=#f5f9ff;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="LỚP TRÌNH BÀY (Presentation) – trình duyệt web: React 19, Vite 8" vertex="1">
+                    <mxGeometry height="284" width="1030" x="40" y="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="tb0" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Cảnh 3D, lớp dữ liệu&lt;/b&gt;&lt;br&gt;ArcGIS Maps SDK for JS 5.1&lt;br&gt;SceneView local, EPSG:3405;&lt;br&gt;ảnh vệ tinh&lt;br&gt;&lt;i&gt;UC01, UC04&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="110" width="258.3333333333333" x="60" y="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="tb1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Tra cứu, cửa sổ thông tin cây&lt;/b&gt;&lt;br&gt;Tìm theo mã / loài;&lt;br&gt;tọa độ VN-2000, WGS84&lt;br&gt;&lt;i&gt;UC02&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="110" width="258.3333333333333" x="333.3333333333333" y="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="tb2" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Thống kê, hộp bối cảnh&lt;/b&gt;&lt;br&gt;Che phủ theo khu, thống kê cây xanh;&lt;br&gt;khu / loài / tình trạng, Đặt lại&lt;br&gt;&lt;i&gt;UC03&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="110" width="258.3333333333333" x="606.6666666666666" y="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="tb3" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Lọc cây, xem theo loài – tình trạng&lt;/b&gt;&lt;br&gt;Chú giải loài,&lt;br&gt;cửa sổ thông tin loài&lt;br&gt;&lt;i&gt;UC08, UC09&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="110" width="258.3333333333333" x="60" y="292" as="geometry"/>
+                </mxCell>
+                <mxCell id="tb4" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Phân tích nguy cơ ngã đổ&lt;/b&gt;&lt;br&gt;Lớp Vùng ngã đổ 1 × H, 1,5 × H&lt;br&gt;(kết quả nạp sẵn)&lt;br&gt;&lt;i&gt;UC07&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="110" width="258.3333333333333" x="333.3333333333333" y="292" as="geometry"/>
+                </mxCell>
+                <mxCell id="tb5" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Đăng nhập, quản trị cây&lt;/b&gt;&lt;br&gt;Biểu mẫu thêm, nhân bản, sửa / dời;&lt;br&gt;xóa; khôi phục, nhật ký&lt;br&gt;&lt;i&gt;UC05, UC06, UC10, UC11&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="110" width="258.3333333333333" x="606.6666666666666" y="292" as="geometry"/>
+                </mxCell>
+                <mxCell id="qgis3d" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;QGIS 3D Map View&lt;/b&gt;&lt;br&gt;(ứng dụng desktop)&lt;br&gt;Dựng, rà soát cảnh 3D,&lt;br&gt;đối chiếu bằng Identify" vertex="1">
+                    <mxGeometry height="232" width="175" x="880" y="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="l2" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=3;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontStyle=1;strokeColor=#666666;fontSize=17;fillColor=#f7fbf2;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="LỚP NGHIỆP VỤ (Application) – Node.js 24, Express 5" vertex="1">
+                    <mxGeometry height="396" width="1030" x="40" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="tt0" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;1.0 Quản lý&lt;br&gt;dữ liệu cây xanh&lt;/b&gt;&lt;br&gt;&lt;i&gt;UC05.1 – UC05.4&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="95" width="190" x="60" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="tt1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;2.0 Tra cứu thông tin&lt;/b&gt;&lt;br&gt;&lt;i&gt;UC02&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="95" width="190" x="265" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="tt2" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;3.0 Hiển thị bản đồ 3D&lt;/b&gt;&lt;br&gt;&lt;i&gt;UC01, UC04&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="95" width="190" x="470" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="tt3" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;4.0 Thống kê che phủ&lt;br&gt;và cây xanh&lt;/b&gt;&lt;br&gt;&lt;i&gt;UC03&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="95" width="190" x="675" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="tt4" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;5.0 Xác thực tài khoản&lt;/b&gt;&lt;br&gt;&lt;i&gt;UC06&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="95" width="190" x="60" y="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="tt5" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;6.0 Lọc và xem&lt;br&gt;theo nhóm cây&lt;/b&gt;&lt;br&gt;&lt;i&gt;UC08, UC09&lt;br&gt;(tại trình duyệt)&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="95" width="190" x="265" y="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="tt6" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;7.0 Phân tích&lt;br&gt;nguy cơ ngã đổ&lt;/b&gt;&lt;br&gt;&lt;i&gt;UC07&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="95" width="190" x="470" y="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="tt7" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;8.0 Khôi phục&lt;br&gt;và hoàn tác&lt;/b&gt;&lt;br&gt;&lt;i&gt;UC10, UC11&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="95" width="190" x="675" y="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="api" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;REST API&lt;/b&gt; (JWT) + driver mssql; gắn phiên SESSION_CONTEXT; phục vụ bản build giao diện&lt;br&gt;GET /cay, /khu-vuc, /loai-cay, /lop-nen, /thong-ke, /phan-tich/cay-nguy-co, /khoi-phuc, /nhat-ky&lt;br&gt;POST /dang-nhap, /cay, /khoi-phuc, /nhat-ky/{ma}/hoan-tac · PUT, DELETE /cay" vertex="1">
+                    <mxGeometry height="92" width="805" x="60" y="780" as="geometry"/>
+                </mxCell>
+                <mxCell id="qgisp" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;QGIS Processing&lt;/b&gt;&lt;br&gt;Buffer, Dissolve,&lt;br&gt;tính diện tích, thể tích&lt;br&gt;&lt;i&gt;kiểm chứng số liệu&lt;br&gt;của tiến trình 4.0&lt;/i&gt;" vertex="1">
+                    <mxGeometry height="312" width="175" x="880" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="l3" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=3;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontStyle=1;strokeColor=#666666;fontSize=17;fillColor=#fffaf0;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="LỚP DỮ LIỆU (Data) – SQL Server Spatial" vertex="1">
+                    <mxGeometry height="205" width="1030" x="40" y="976" as="geometry"/>
+                </mxCell>
+                <mxCell id="sql" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Azure SQL Database (EPSG:3405)&lt;/b&gt;&lt;br&gt;D1 CAY_XANH · D2 LOAI_CAY · D3 KHU_VUC · D5 TAI_KHOAN, NGUOI_QUAN_LY&lt;br&gt;D4 lớp nền: TOA_NHA · DUONG · RANH_GIOI · D6 NHAT_KY_CAY · D7 CAY_XANH_MAC_DINH&lt;br&gt;Ràng buộc R1–R17; trigger: gán khu vực, phân quyền, nhật ký, ngoài tòa nhà&lt;br&gt;Thủ tục: sp_dang_nhap, sp_thong_ke_che_phu, sp_cay_nguy_co_cong_trinh,&lt;br&gt;sp_khoi_phuc_mac_dinh, sp_hoan_tac_nhat_ky" vertex="1">
+                    <mxGeometry height="140" width="805" x="60" y="1021" as="geometry"/>
+                </mxCell>
+                <mxCell id="gpkg" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;GeoPackage&lt;/b&gt;&lt;br&gt;&lt;b&gt;Tree.gpkg&lt;/b&gt; và&lt;br&gt;CSDL SQL Server local&lt;br&gt;(nguồn dựng dữ liệu;&lt;br&gt;chuyển lên Azure&lt;br&gt;bằng tệp .bacpac)" vertex="1">
+                    <mxGeometry height="140" width="175" x="880" y="1021" as="geometry"/>
+                </mxCell>
+                <mxCell id="azure" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=2;fillColor=none;strokeColor=#0078d4;strokeWidth=2;dashed=1;dashPattern=8 4;verticalAlign=top;align=right;spacingRight=12;spacingTop=6;fontStyle=1;fontColor=#0078d4;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="Microsoft Azure (Japan East)&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;App Service (Linux) · SQL Database serverless&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="673" width="825" x="50" y="498" as="geometry"/>
+                </mxCell>
+                <mxCell id="n_esri" edge="1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="Ảnh vệ tinh (HTTPS)">
+                    <mxGeometry relative="1" x="-0.0714" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="175" y="74" as="sourcePoint"/>
+                        <mxPoint x="175" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n_act0" edge="1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="440" y="100" as="sourcePoint"/>
+                        <mxPoint x="440" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n_act1" edge="1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="630" y="100" as="sourcePoint"/>
+                        <mxPoint x="630" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n_act2" edge="1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="820" y="100" as="sourcePoint"/>
+                        <mxPoint x="820" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n_api" edge="1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=15;startArrow=block;startFill=1;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;HTTPS · REST API (JSON / GeoJSON)&lt;/b&gt;">
+                    <mxGeometry relative="1" x="-0.1111" y="8" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="462.5" y="414" as="sourcePoint"/>
+                        <mxPoint x="462.5" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n_qgis1" edge="1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=15;startArrow=block;startFill=1;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Cùng ứng dụng desktop&lt;/b&gt;">
+                    <mxGeometry relative="1" x="-0.1111" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="967.5" y="414" as="sourcePoint"/>
+                        <mxPoint x="967.5" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n_sql" edge="1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=15;startArrow=block;startFill=1;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;SQL qua driver mssql (truy vấn, thủ tục), người dùng quyền tối thiểu&lt;/b&gt;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="462.5" y="872" as="sourcePoint"/>
+                        <mxPoint x="462.5" y="1021" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n_qgis2" edge="1" parent="1" style="fontFamily=Helvetica;fontSize=15;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=15;startArrow=block;startFill=1;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="&lt;b&gt;Kết nối SQL Server,&lt;br&gt;đọc GeoPackage&lt;/b&gt;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="967.5" y="872" as="sourcePoint"/>
+                        <mxPoint x="967.5" y="1021" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Cjun7PGQ9drFtrXUwAA--1" connectable="0" parent="1" style="group;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="" vertex="1">
+                    <mxGeometry height="30" width="300" x="40" y="1205" as="geometry"/>
+                </mxCell>
+                <mxCell id="cg0" parent="Cjun7PGQ9drFtrXUwAA--1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#dae8fc;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="" vertex="1">
+                    <mxGeometry height="28" width="28.402366863905325" y="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cgt0" parent="Cjun7PGQ9drFtrXUwAA--1" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="WebGIS (triển khai trên Azure)" vertex="1">
+                    <mxGeometry height="30" width="262" x="35.976331360946745" as="geometry"/>
+                </mxCell>
+                <mxCell id="Cjun7PGQ9drFtrXUwAA--2" connectable="0" parent="1" style="group;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="" vertex="1">
+                    <mxGeometry height="30" width="320" x="360" y="1205" as="geometry"/>
+                </mxCell>
+                <mxCell id="cg1" parent="Cjun7PGQ9drFtrXUwAA--2" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#36393d;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="" vertex="1">
+                    <mxGeometry height="28" width="27.514792899408285" y="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cgt1" parent="Cjun7PGQ9drFtrXUwAA--2" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="QGIS: dựng, phân tích, kiểm chứng" vertex="1">
+                    <mxGeometry height="30" width="282" x="34.85207100591716" as="geometry"/>
+                </mxCell>
+                <mxCell id="Cjun7PGQ9drFtrXUwAA--6" connectable="0" parent="1" style="group;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="" vertex="1">
+                    <mxGeometry height="30" width="135" x="935" y="1205" as="geometry"/>
+                </mxCell>
+                <mxCell id="cg3" parent="Cjun7PGQ9drFtrXUwAA--6" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=0;fillColor=#e6e6e6;strokeColor=#333333;strokeWidth=1.5;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="" vertex="1">
+                    <mxGeometry height="28" width="30" y="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cgt3" parent="Cjun7PGQ9drFtrXUwAA--6" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="Dịch vụ ngoài" vertex="1">
+                    <mxGeometry height="30" width="97" x="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="Cjun7PGQ9drFtrXUwAA--7" connectable="0" parent="1" style="group;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="" vertex="1">
+                    <mxGeometry height="30" width="220" x="700" y="1205" as="geometry"/>
+                </mxCell>
+                <mxCell id="cg2" parent="Cjun7PGQ9drFtrXUwAA--7" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;rounded=1;arcSize=2;fillColor=none;strokeColor=#0078d4;strokeWidth=2;dashed=1;dashPattern=8 4;align=right;spacingRight=12;spacingTop=6;fontStyle=1;fontColor=#0078d4;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="" vertex="1">
+                    <mxGeometry height="28" width="30" y="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cgt2" parent="Cjun7PGQ9drFtrXUwAA--7" style="fontFamily=Helvetica;fontSize=15;html=1;whiteSpace=wrap;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;editable=1;movable=1;resizable=1;rotatable=1;deletable=1;locked=0;connectable=1;" value="Dịch vụ Microsoft Azure" vertex="1">
+                    <mxGeometry height="30" width="182" x="38" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
