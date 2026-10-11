@@ -17,14 +17,21 @@ So với phương pháp quản lý điểm 2D truyền thống, hệ thống xâ
 
 ### Tóm tắt các kết quả số liệu cốt lõi của đề tài (đối chiếu báo cáo):
 
-- **Phạm vi vùng nghiên cứu:** Khu đô thị ĐHQG-HCM với tổng diện tích tự nhiên là **616,27 ha**, được phân chia topo chặt chẽ thành **5 phân khu quản lý** theo tim các trục đường giao thông chính (Khu KTX Khu B, Khu Trung tâm - Điều hành, Khu Đông Bắc, Khu Đông Nam, Khu phía Tây).
-- **Dữ liệu cây xanh 3D:** **333 cây xanh** được số hóa hoàn chỉnh với hệ tọa độ phẳng quốc gia VN-2000 UTM Zone 48N (EPSG:3405), gán cao độ địa hình Z, mô hình hóa thân trụ (theo đường kính ngang ngực DBH) và tán cầu ellipsoid co giãn (theo chiều cao cây $H$ và bán kính tán $R$). Dữ liệu phân bố trên 4 loài cây chủ đạo:
-  - *Dầu rái* (*Dipterocarpus alatus*): 100 cây (30,03%).
+- **Phạm vi vùng nghiên cứu:** Khu đô thị ĐHQG-HCM với tổng diện tích tự nhiên là **616,27 ha**, được phân chia topo chặt chẽ thành **5 phân khu quản lý** theo tim các trục đường giao thông chính:
+  1. Khu phía Tây: 303,53 ha (96 cây).
+  2. Khu Trung tâm Marie Curie - Isaac Newton: 42,24 ha (45 cây).
+  3. Khu Quảng trường Sáng tạo: 15,43 ha (36 cây).
+  4. Khu Đông Bắc: 148,97 ha (29 cây).
+  5. Khu Đông Nam: 106,10 ha (127 cây).
+- **Dữ liệu cây xanh 3D:** **333 cây xanh** được số hóa hoàn chỉnh với hệ tọa độ phẳng quốc gia VN-2000 UTM Zone 48N (EPSG:3405), gán cao độ địa hình Z, mô hình hóa thân trụ (theo đường kính ngang ngực DBH) và tán cầu ellipsoid co giãn (theo chiều cao cây $H$ và bán kính tán $R$). Dữ liệu phân bố chuẩn xác trên 4 loài cây chủ đạo trong CSDL:
+  - *Bàng* (*Terminalia catappa*): 102 cây (30,63%).
   - *Sao đen* (*Hopea odorata*): 91 cây (27,33%).
-  - *Lim sét* (*Peltophorum pterocarpum*): 76 cây (22,82%).
-  - *Phượng vĩ* (*Delonix regia*): 66 cây (19,82%).
+  - *Lim xẹt* (*Peltophorum pterocarpum*): 70 cây (21,02%).
+  - *Me tây* (*Albizia saman*): 70 cây (21,02%).
+- **Tình trạng sức khỏe cây xanh (giả định):** 266 cây Bình thường (79,88%), 59 cây Suy yếu (17,72%), 8 cây Nguy hiểm (2,40%).
 - **Lớp bản đồ nền đô thị (Base layer):** **716 khối tòa nhà** (đùn khối 3D Extrusion theo số tầng và chiều cao thực tế/giả định) và **2.486 đoạn đường giao thông** nội khu trích xuất từ OpenStreetMap.
-- **Chỉ số không gian xanh toàn vùng:** Tỷ lệ che phủ tán cây đạt **12,79%** (tương đương 78,82 ha diện tích tán thực tế), tổng thể tích tán xấp xỉ **1.217.391 m³**, mật độ trung bình toàn vùng đạt **0,54 cây/ha**.
+- **Chỉ số không gian xanh toàn vùng:** Tỷ lệ che phủ tán cây đạt **0,48%** (tương đương diện tích tán thực tế là **29.868 m²**), tổng thể tích tán xấp xỉ **246.750 m³**, mật độ trung bình toàn vùng đạt **0,54 cây/ha** (phân khu đạt độ che phủ cao nhất là Khu Quảng trường Sáng tạo với 2,24%).
+
 - **Đánh giá nguy cơ ngã đổ (Tree Risk Assessment):** Tự động khoanh vùng ảnh hưởng $1{,}5 \times H$ đối với các cây thuộc diện *Suy yếu* hoặc *Nguy hiểm*, phân cấp rủi ro theo 3 mức vùng mục tiêu ISA (Mức Cao: mục tiêu trong tán cây; Mức Trung bình: mục tiêu trong phạm vi $1 \times H$; Mức Thấp: mục tiêu trong phạm vi $1{,}5 \times H$).
 
 ---
